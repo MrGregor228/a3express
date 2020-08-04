@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+/* line 5, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 8, ../scss/style.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 13, ../scss/style.scss */
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* line 20, ../scss/style.scss */
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-shadow: 0 0 10px grey;
+}
+/* line 30, ../scss/style.scss */
+.navigation .navigation__inner-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+/* line 42, ../scss/style.scss */
+.navigation .navigation__inner-wrapper .navigation__brand {
+  display: inline-block;
+  max-width: max-content;
+}
+/* line 46, ../scss/style.scss */
+.navigation .navigation__inner-wrapper .navigation__brand img {
+  max-width: 180px;
+}
+/* line 51, ../scss/style.scss */
+.navigation .navigation__inner-wrapper .navigation__toggle-bar {
+  display: none;
+  margin-left: auto;
+}
+/* line 56, ../scss/style.scss */
+.navigation .navigation__inner-wrapper .navigation__toggle-bar .openMenu {
+  font-size: 20px;
+  padding: 3px 13px;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #4d4d4d;
+  color: #4d4d4d;
+  border-radius: 3px;
+}
+@media screen and (max-width: 992px) {
+  /* line 51, ../scss/style.scss */
+  .navigation .navigation__inner-wrapper .navigation__toggle-bar {
+    display: block;
+  }
+}
+/* line 71, ../scss/style.scss */
+.navigation .navigation__inner-wrapper .navigation-menu {
+  flex: 1 1 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  transition: height 0.2s linear;
+}
+/* line 79, ../scss/style.scss */
+.navigation .navigation__inner-wrapper .navigation-menu .navigation-menu__link {
+  font-size: 20px;
+  padding: 3px 5px;
+}
+/* line 83, ../scss/style.scss */
+.navigation .navigation__inner-wrapper .navigation-menu .navigation-menu__link a {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+/* line 89, ../scss/style.scss */
+.navigation .navigation__inner-wrapper .navigation-menu .menuCloser {
+  display: none;
+}
+@media screen and (max-width: 992px) {
+  /* line 71, ../scss/style.scss */
+  .navigation .navigation__inner-wrapper .navigation-menu {
+    display: none;
+    background-color: #fff;
+    overflow: hidden;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+  }
+  /* line 103, ../scss/style.scss */
+  .navigation .navigation__inner-wrapper .navigation-menu .navigation-menu__link {
+    margin-top: 10px;
+  }
+  /* line 107, ../scss/style.scss */
+  .navigation .navigation__inner-wrapper .navigation-menu .menuCloser {
+    display: block;
+    margin-top: 25px;
+  }
+  /* line 111, ../scss/style.scss */
+  .navigation .navigation__inner-wrapper .navigation-menu .menuCloser .close {
+    border: none;
+    font-size: 25px;
+    color: #4d4d4d;
+  }
+  /* line 118, ../scss/style.scss */
+  .navigation .navigation__inner-wrapper .navigation-menu.opened {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: menuOpen 0.5s linear alternate both;
+  }
+  /* line 126, ../scss/style.scss */
+  .navigation .navigation__inner-wrapper .navigation-menu.closed {
+    animation: menuClose 0.5s linear alternate both;
+  }
+}
+
+@keyframes menuOpen {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+@-webkit-keyframes menuOpen {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+@keyframes menuClose {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: -100%;
+  }
+}
+@-webkit-keyframes menuClose {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: -100%;
+  }
+}
