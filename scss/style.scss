@@ -10,6 +10,7 @@
 }
 
 button {
+    background:none;
     background-color: none;
     &:focus {
         outline: none;
@@ -110,6 +111,7 @@ button {
                     margin-top: 25px;
 
                     .close {
+                        background:none;
                         border: none;
                         font-size: 25px;
                         color: #4d4d4d;

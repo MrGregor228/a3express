@@ -72,15 +72,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 12, ../scss/style.scss */
 button {
+  background: none;
   background-color: none;
 }
-/* line 14, ../scss/style.scss */
+/* line 15, ../scss/style.scss */
 button:focus {
   outline: none;
   box-shadow: none;
 }
 
-/* line 21, ../scss/style.scss */
+/* line 22, ../scss/style.scss */
 .navigation {
   position: fixed;
   top: 0;
@@ -91,7 +92,7 @@ button:focus {
   padding-bottom: 15px;
   box-shadow: 0 0 10px grey;
 }
-/* line 31, ../scss/style.scss */
+/* line 32, ../scss/style.scss */
 .navigation .navigation__inner-wrapper {
   display: flex;
   flex-direction: row;
@@ -103,21 +104,21 @@ button:focus {
   padding-right: 15px;
   padding-left: 15px;
 }
-/* line 43, ../scss/style.scss */
+/* line 44, ../scss/style.scss */
 .navigation .navigation__inner-wrapper .navigation__brand {
   display: inline-block;
   max-width: max-content;
 }
-/* line 47, ../scss/style.scss */
+/* line 48, ../scss/style.scss */
 .navigation .navigation__inner-wrapper .navigation__brand img {
   max-width: 180px;
 }
-/* line 52, ../scss/style.scss */
+/* line 53, ../scss/style.scss */
 .navigation .navigation__inner-wrapper .navigation__toggle-bar {
   display: none;
   margin-left: auto;
 }
-/* line 57, ../scss/style.scss */
+/* line 58, ../scss/style.scss */
 .navigation .navigation__inner-wrapper .navigation__toggle-bar .openMenu {
   font-size: 20px;
   padding: 3px 13px;
@@ -128,12 +129,12 @@ button:focus {
   border-radius: 3px;
 }
 @media screen and (max-width: 992px) {
-  /* line 52, ../scss/style.scss */
+  /* line 53, ../scss/style.scss */
   .navigation .navigation__inner-wrapper .navigation__toggle-bar {
     display: block;
   }
 }
-/* line 72, ../scss/style.scss */
+/* line 73, ../scss/style.scss */
 .navigation .navigation__inner-wrapper .navigation-menu {
   flex: 1 1 80%;
   display: flex;
@@ -142,22 +143,22 @@ button:focus {
   justify-content: flex-end;
   transition: height 0.2s linear;
 }
-/* line 80, ../scss/style.scss */
+/* line 81, ../scss/style.scss */
 .navigation .navigation__inner-wrapper .navigation-menu .navigation-menu__link {
   font-size: 20px;
   padding: 3px 5px;
 }
-/* line 84, ../scss/style.scss */
+/* line 85, ../scss/style.scss */
 .navigation .navigation__inner-wrapper .navigation-menu .navigation-menu__link a {
   text-decoration: none;
   color: #4d4d4d;
 }
-/* line 90, ../scss/style.scss */
+/* line 91, ../scss/style.scss */
 .navigation .navigation__inner-wrapper .navigation-menu .menuCloser {
   display: none;
 }
 @media screen and (max-width: 992px) {
-  /* line 72, ../scss/style.scss */
+  /* line 73, ../scss/style.scss */
   .navigation .navigation__inner-wrapper .navigation-menu {
     display: none;
     background-color: #fff;
@@ -168,22 +169,23 @@ button:focus {
     height: 100vh;
     width: 100%;
   }
-  /* line 104, ../scss/style.scss */
+  /* line 105, ../scss/style.scss */
   .navigation .navigation__inner-wrapper .navigation-menu .navigation-menu__link {
     margin-top: 10px;
   }
-  /* line 108, ../scss/style.scss */
+  /* line 109, ../scss/style.scss */
   .navigation .navigation__inner-wrapper .navigation-menu .menuCloser {
     display: block;
     margin-top: 25px;
   }
-  /* line 112, ../scss/style.scss */
+  /* line 113, ../scss/style.scss */
   .navigation .navigation__inner-wrapper .navigation-menu .menuCloser .close {
+    background: none;
     border: none;
     font-size: 25px;
     color: #4d4d4d;
   }
-  /* line 119, ../scss/style.scss */
+  /* line 121, ../scss/style.scss */
   .navigation .navigation__inner-wrapper .navigation-menu.opened {
     display: flex;
     flex-direction: column;
@@ -191,7 +193,7 @@ button:focus {
     justify-content: center;
     animation: menuOpen 0.5s linear alternate both;
   }
-  /* line 127, ../scss/style.scss */
+  /* line 129, ../scss/style.scss */
   .navigation .navigation__inner-wrapper .navigation-menu.closed {
     animation: menuClose 0.5s linear alternate both;
   }
