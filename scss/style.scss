@@ -1,4 +1,6 @@
 @import "compass/reset";
+
+// -------------------- Gregory ------------------
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
@@ -7,6 +9,10 @@
 // border:1px solid red;
 * {
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
 }
 
 button {
@@ -19,6 +25,12 @@ button {
     }
 }
 
+section {
+    &:not(:first-child) {
+        margin-top: 50px;
+    }
+}
+
 .navigation {
     position: fixed;
     top: 0;
@@ -28,6 +40,8 @@ button {
     padding-top: 15px;
     padding-bottom: 15px;
     box-shadow: 0 0 10px grey;
+    background-color: #fff;
+    z-index: 99999;
 
     .navigation__inner-wrapper {
         display: flex;
@@ -136,10 +150,55 @@ button {
     }
 }
 
+// .slider {
+//     max-width: 992px;
+//     width: 100%;
+//     overflow-x: hidden;
+//     position: relative;
+//     margin: 0 auto;
+//     .btn-container {
+//         button {
+//             position: absolute;
+//             top:50%;
+//             transform: translate(0%, -50%);
+//             border:none;
+//             font-size: 40px;
+//         }
+//         .btn-prev {
+//             left: 0;
+//         }
+//         .btn-next {
+//             right: 0;
+//         }
+//     }
+// }
+
+// .slider__wrapper {
+//     display: flex;
+//     transition: 0.2s;
+//     max-width: 992px;
+//     margin: 0 auto;
+// }
+
+// .slider__item {    
+//     margin-right: auto;
+//     margin-left: auto;
+//     text-align: center;
+//     img {
+//         max-width: 992px;
+//     }
+// }
+
+
+
+
+
+
 @keyframes menuOpen {
     0% {
         top: -100%;
     }
+
     100% {
         top: 0%;
     }
@@ -149,6 +208,7 @@ button {
     0% {
         top: -100%;
     }
+
     100% {
         top: 0%;
     }
@@ -159,6 +219,7 @@ button {
     0% {
         top: 0%;
     }
+
     100% {
         top: -100%;
     }
@@ -168,7 +229,371 @@ button {
     0% {
         top: 0%;
     }
+
     100% {
         top: -100%;
     }
 }
+
+// -------------------- Gregory ------------------
+
+// -------------------- Alex ---------------------
+
+
+.header {
+    position: relative;
+    padding: 9em 0 2em 0;
+    background: url("https://i.ibb.co/whwYfv4/beach-background-laptop-97374.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    
+
+    @media (max-width: 768px) {
+        max-height: 600px;
+        padding: 6em 0 2em 0;
+    }
+
+    @media (max-width: 576px) {
+        padding: 3em 0 2em 0;
+    }
+
+    .container {
+        max-width: 1110px;
+        margin: 0 auto;
+    }
+
+    .header__title {
+        font-family: "Lobster", cursive;
+        font-size: 8em;
+        color: #dc2c1d;
+        line-height: 0.8em;
+
+        @media (max-width: 992px) {
+            font-size: 6em;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 4em;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 3em;
+        }
+    }
+
+    .header__title-wrapper {
+        max-width: 850px;
+        margin: 0 auto 3rem auto;
+
+        @media (max-width: 992px) {
+            max-width: 65%;
+        }
+
+        @media (max-width: 768px) {
+            max-width: 60%;
+        }
+
+        @media (max-width: 576px) {
+            max-width: 60%;
+        }
+    }
+
+    .header__title_left {
+        text-align: left;
+    }
+
+    .header__title_right {
+        text-align: right;
+    }
+
+    .header__subtitle {
+        font-size: 3.5em;
+        margin-bottom: 3rem;
+
+        @media (max-width: 992px) {
+            font-size: 2.5em;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 2em;
+        }
+
+        &:before {
+            content: "";
+            height: 3px;
+            width: 90%;
+            background: #000;
+            display: block;
+            margin: 0 auto 20px auto;
+
+            @media (max-width: 768px) {
+                height: 2px;
+            }
+        }
+    }
+
+    .header__text {
+        font-weight: 500;
+        font-size: 3em;
+        line-height: 1.25;
+        margin: 0 2rem;
+
+        @media (max-width: 992px) {
+            font-size: 2em;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 1.7em;
+        }
+
+        @media (max-width: 576px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        & span:after {
+            content: "\f004";
+            margin-left: 10px;
+
+            @media (max-width: 576px) {
+                content: "";
+                margin-left: 10px;
+            }
+        }
+
+        & span:last-child:after {
+            display: none;
+        }
+    }
+}
+
+.header__phone {
+    margin-top: 7rem;
+    display: inline-block;
+    font-size: 4em;
+    text-decoration: none;
+    color: #dc2c1d;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+
+    @media (max-width: 992px) {
+        font-size: 3em;
+        margin-top: 0;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 1.8em;
+        margin-top: 0;
+    }
+}
+
+.title {
+    font-family: "Lobster", cursive;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.advantages {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .advantages__item {
+        @media (max-width: 768px) {
+            flex: 0 1 30%;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 6em;
+            margin-bottom: .9rem;
+        }
+
+        .icon {
+            font-size: 2.5em;
+            color: #7E7B7F;
+            margin-bottom: .7rem;
+        }
+
+        .advantages__text {
+            width: 8rem;
+
+            @media (max-width: 768px) {
+                width: auto;
+            }
+        }
+    }
+}
+
+// -------------------- Alex ---------------------
+
+// -------------------- Denis --------------------
+
+.sec5 {
+    padding-right: 15px;
+    padding-left: 15px;
+    z-index: 0;
+    max-width: 768px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.why-us {
+    font-family: "Lobster", cursive;
+    text-align: center;
+    font-size: 50px;
+
+    h2 {
+        color: #db2c1d;
+    }
+}
+
+.inside {
+    font-family: "Oswald", cursive;
+    text-align: center;
+    font-size: 25px;
+}
+
+.why-us__paragraph {
+    margin-top: 10px;
+    line-height: 1.5;
+    &:before {
+        content: "";
+        background-image: url("https://i.ibb.co/C2gVk9Z/3-55.png");
+        display: block;
+        width: 28px;
+        height: 25px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 10px;
+    }
+}
+
+.end-text {
+    margin-top: 40px;
+    font-size: 20px;
+    text-align: justify;
+
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 1.5;
+}
+
+.why-us__logo {
+    margin-top: 50px;
+
+    img {
+        max-width: 280px;
+    }
+}
+
+.why-us__tel {
+    font-family: "Oswald", cursive;
+    text-align: center;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 50px;
+    color: #d22020;
+}
+
+.we__soc {
+    font-family: "Oswald";
+    text-align: center;
+    margin-top: 50px;
+    font-size: 28px;
+    color: #000000;
+}
+
+.sec5__soc {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 768px;
+
+    .social-link {
+        flex: 1 1 50%;
+        padding: 15px;
+        @media screen and (max-width:768px) {
+            flex:1 1 100%;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        ul {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            width: -webkit-max-content;
+            width: -moz-max-content;
+            width: max-content;
+
+            &:first-child {
+                margin-left: auto;
+            }
+
+            &:nth-child(1) {
+                margin-right: auto;
+            }
+
+            li {
+                img {
+                    margin-right: 5px;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #000;
+                    position: relative;
+                    top: -7px;
+                }
+            }
+        }
+
+    }
+}
+
+.title-footer {
+    font-family: "Oswald";
+    text-align: center;
+    font-size: 30px;
+    margin-top: 15px;
+    color: #ffff;
+    height: auto;
+    padding: 15px;
+}
+
+.title-footer__two {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    padding: 0px 10px 15px 0px;
+}
+
+.footer-link {
+    color: #fff;
+
+    font-weight: lighter;
+}
+
+.footer {
+    background-color: #727b8d;
+}
+
+// -------------------- Denis --------------------
