@@ -248,7 +248,7 @@ section {
             font-size: 5em;
             background-color: rgba(black, .6);
 
-            width: .75em;
+            width: 55px;
 
             cursor: pointer;
 
@@ -345,33 +345,21 @@ section {
         font-size: 8em;
         color: #dc2c1d;
         line-height: 0.8em;
-
-        @media (max-width: 992px) {
-            font-size: 6em;
-        }
-
-        @media (max-width: 768px) {
-            font-size: 4em;
-        }
-
-        @media (max-width: 576px) {
-            font-size: 3em;
-        }
-    }
-
-    .header__title-wrapper {
         max-width: 850px;
         margin: 0 auto 3rem auto;
 
         @media (max-width: 992px) {
+            font-size: 6em;
             max-width: 65%;
         }
 
         @media (max-width: 768px) {
+            font-size: 4em;
             max-width: 60%;
         }
 
         @media (max-width: 576px) {
+            font-size: 3em;
             max-width: 60%;
         }
     }
@@ -381,6 +369,7 @@ section {
     }
 
     .header__title_right {
+        display: block;
         text-align: right;
     }
 
@@ -531,6 +520,7 @@ section {
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
+
     .directions {
         display: flex;
         flex-wrap: wrap;
@@ -554,27 +544,35 @@ section {
             flex: 0 1 45%;
             position: relative;
             padding: 5rem 0;
+
             &:nth-of-type(1) {
                 background-image: url('../images/seas/zalizny-port.jpg');
             }
+
             &:nth-of-type(2) {
                 background-image: url('../images/seas/berdyansk.jpg');
             }
+
             &:nth-of-type(3) {
                 background-image: url('../images/seas/lazurnoe.jpg');
             }
+
             &:nth-of-type(4) {
                 background-image: url('../images/seas/kirilovka.jpg');
             }
+
             &:nth-of-type(5) {
                 background-image: url('../images/seas/skadovsk.jpg');
             }
+
             &:nth-of-type(6) {
                 background-image: url('../images/seas/schastlivcevo.jpg');
             }
+
             &:nth-of-type(7) {
                 background-image: url('../images/seas/genichesk.jpg');
             }
+
             background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
