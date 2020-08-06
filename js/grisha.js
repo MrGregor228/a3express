@@ -26,13 +26,13 @@ divs.forEach((item,i) => {
 $("li.navigation-menu__link a").click(function (e) {
 	e.preventDefault();
 	elementClick = $(this).attr("href");
-	destination = $(elementClick).offset().top;
-	$("body,html").animate({scrollTop: destination }, 800);
+	destination = $(elementClick).offset().top - 250;
+	$("body,html").animate({scrollTop: destination }, 350);
 });
 $(".navigation__brand a").click(function (e) {
 	e.preventDefault();
 	elementClick = $(this).attr("href");
-	destination = $(elementClick).offset().top;
-	$("body,html").animate({scrollTop: destination }, 800);
+	destination = $(elementClick).offset().top - 100;
+	$("body,html").animate({scrollTop: destination }, 350);
 });
 
