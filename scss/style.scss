@@ -95,10 +95,24 @@ section {
             .navigation-menu__link {
                 font-size: 20px;
                 padding: 3px 8px;
-
+                &:after {
+                    content:"";
+                    display: block;
+                    height: 2px;
+                    width: 0%;
+                    margin-top: 3px;
+                    background-color: #dc2c1d;
+                   
+                    transition: .2s linear;
+                    
+                }
+                &:hover:after {
+                    width: 100%;
+                }
                 a {
                     text-decoration: none;
                     color: #4d4d4d;
+                    
                 }
             }
 
