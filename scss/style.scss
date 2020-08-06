@@ -95,24 +95,27 @@ section {
             .navigation-menu__link {
                 font-size: 20px;
                 padding: 3px 8px;
+
                 &:after {
-                    content:"";
+                    content: "";
                     display: block;
                     height: 2px;
                     width: 0%;
                     margin-top: 3px;
                     background-color: #dc2c1d;
-                   
+
                     transition: .2s linear;
-                    
+
                 }
+
                 &:hover:after {
                     width: 100%;
                 }
+
                 a {
                     text-decoration: none;
                     color: #4d4d4d;
-                    
+
                 }
             }
 
@@ -179,7 +182,7 @@ section {
     .owl-stage-outer {
         max-width: 768px;
         margin-right: auto;
-        margin-left: auto;  
+        margin-left: auto;
     }
 
     .owl-stage {
@@ -191,33 +194,38 @@ section {
         .bgi-div {
             max-width: 768px;
             width: 100%;
-            height: 475px;            
+            height: 475px;
 
         }
+
         &:nth-of-type(1) {
             .bgi-div {
-                background: url('../images/1.JPG') no-repeat bottom center; 
-                background-size: cover;    
+                background: url('../images/1.JPG') no-repeat bottom center;
+                background-size: cover;
             }
         }
+
         &:nth-of-type(2) {
             .bgi-div {
                 background: url('../images/2.JPG') no-repeat bottom center;
                 background-size: cover;
             }
         }
+
         &:nth-of-type(3) {
             .bgi-div {
                 background: url('../images/3.JPG') no-repeat bottom center;
                 background-size: cover;
             }
         }
+
         &:nth-of-type(4) {
             .bgi-div {
                 background: url('../images/4.JPG') no-repeat bottom center;
                 background-size: cover;
             }
         }
+
         &:nth-of-type(5) {
             .bgi-div {
                 background: url('../images/5.JPG') no-repeat bottom center;
@@ -513,6 +521,126 @@ section {
 
             @media (max-width: 768px) {
                 width: auto;
+            }
+        }
+    }
+}
+
+.ways {
+    padding: 3rem 0;
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    .directions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .directions__overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+            transition: ease 0.4s all;
+        }
+
+        .directions__card {
+            position: relative;
+            transition: ease 0.4s all;
+            margin-bottom: 2rem;
+            flex: 0 1 45%;
+            position: relative;
+            padding: 5rem 0;
+            &:nth-of-type(1) {
+                background-image: url('../images/seas/zalizny-port.jpg');
+            }
+            &:nth-of-type(2) {
+                background-image: url('../images/seas/berdyansk.jpg');
+            }
+            &:nth-of-type(3) {
+                background-image: url('../images/seas/lazurnoe.jpg');
+            }
+            &:nth-of-type(4) {
+                background-image: url('../images/seas/kirilovka.jpg');
+            }
+            &:nth-of-type(5) {
+                background-image: url('../images/seas/skadovsk.jpg');
+            }
+            &:nth-of-type(6) {
+                background-image: url('../images/seas/schastlivcevo.jpg');
+            }
+            &:nth-of-type(7) {
+                background-image: url('../images/seas/genichesk.jpg');
+            }
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            min-height: 270px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media (max-width: 992px) {
+                flex: 0 1 85%;
+                height: 50vh;
+            }
+
+            @media (max-width: 576px) {
+                flex: 0 1 85%;
+                height: 40vh;
+            }
+
+            .directions__content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .directions__icon {
+                    color: #fff;
+                    font-size: 2em;
+                    z-index: 2;
+                }
+
+                .directions__title {
+                    font-size: 1.8em;
+                    font-weight: 500;
+                    margin-bottom: 1.8rem;
+                    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
+                    z-index: 2;
+                }
+
+                .directions__link {
+                    color: #fff;
+                    font-size: 1em;
+                    font-family: 'Roboto', sans-serif;
+                    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
+                    z-index: 2;
+                    transition: ease 0.3s all;
+
+                    &:hover {
+                        text-decoration: none;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+            .directions__price {
+                font-size: 2em;
+                position: absolute;
+                bottom: 1rem;
+                left: 85%;
+                transform: translate(-50%, 0%);
+                text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
+                z-index: 2;
+            }
+
+            &:hover .directions__overlay {
+                opacity: 1;
             }
         }
     }
