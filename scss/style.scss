@@ -630,9 +630,9 @@ section {
             .directions__price {
                 font-size: 2em;
                 position: absolute;
-                bottom: 1rem;
-                left: 85%;
-                transform: translate(-50%, 0%);
+                bottom: .5rem;
+                right: 1rem;
+                transform: translate(0%, -50%);
                 text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
                 z-index: 2;
             }
