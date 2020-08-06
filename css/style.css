@@ -634,8 +634,20 @@ section:not(:first-child) {
   color: #d22020;
   text-decoration: none;
 }
+@media (max-width: 992px) {
+  /* line 544, ../scss/style.scss */
+  .why-us__tel {
+    font-size: 3em;
+  }
+}
+@media (max-width: 576px) {
+  /* line 544, ../scss/style.scss */
+  .why-us__tel {
+    font-size: 1.8em;
+  }
+}
 
-/* line 557, ../scss/style.scss */
+/* line 564, ../scss/style.scss */
 .we__soc {
   font-family: "Oswald";
   text-align: center;
@@ -644,7 +656,7 @@ section:not(:first-child) {
   color: #000000;
 }
 
-/* line 565, ../scss/style.scss */
+/* line 572, ../scss/style.scss */
 .sec5__soc {
   display: flex;
   flex-wrap: wrap;
@@ -656,20 +668,20 @@ section:not(:first-child) {
   margin-left: auto;
   max-width: 768px;
 }
-/* line 576, ../scss/style.scss */
+/* line 583, ../scss/style.scss */
 .sec5__soc .social-link {
   flex: 1 1 50%;
   padding: 15px;
 }
 @media screen and (max-width: 768px) {
-  /* line 576, ../scss/style.scss */
+  /* line 583, ../scss/style.scss */
   .sec5__soc .social-link {
     flex: 1 1 100%;
     padding-top: 0;
     padding-bottom: 0;
   }
 }
-/* line 586, ../scss/style.scss */
+/* line 593, ../scss/style.scss */
 .sec5__soc .social-link ul {
   font-family: 'Roboto', sans-serif;
   display: flex;
@@ -678,19 +690,19 @@ section:not(:first-child) {
   width: -moz-max-content;
   width: max-content;
 }
-/* line 594, ../scss/style.scss */
+/* line 601, ../scss/style.scss */
 .sec5__soc .social-link ul:first-child {
   margin-left: auto;
 }
-/* line 598, ../scss/style.scss */
+/* line 605, ../scss/style.scss */
 .sec5__soc .social-link ul:nth-child(1) {
   margin-right: auto;
 }
-/* line 603, ../scss/style.scss */
+/* line 610, ../scss/style.scss */
 .sec5__soc .social-link ul li img {
   margin-right: 5px;
 }
-/* line 607, ../scss/style.scss */
+/* line 614, ../scss/style.scss */
 .sec5__soc .social-link ul li a {
   text-decoration: none;
   color: #000;
@@ -698,7 +710,7 @@ section:not(:first-child) {
   top: -7px;
 }
 
-/* line 619, ../scss/style.scss */
+/* line 626, ../scss/style.scss */
 .title-footer {
   font-family: "Oswald";
   text-align: center;
@@ -709,7 +721,7 @@ section:not(:first-child) {
   padding: 15px;
 }
 
-/* line 629, ../scss/style.scss */
+/* line 636, ../scss/style.scss */
 .title-footer__two {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -717,13 +729,13 @@ section:not(:first-child) {
   padding: 0px 10px 15px 0px;
 }
 
-/* line 636, ../scss/style.scss */
+/* line 643, ../scss/style.scss */
 .footer-link {
   color: #fff;
   font-weight: lighter;
 }
 
-/* line 642, ../scss/style.scss */
+/* line 649, ../scss/style.scss */
 .footer {
   background-color: #727b8d;
 }

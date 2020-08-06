@@ -551,6 +551,13 @@ section {
         color: #d22020;
     text-decoration: none;
     }
+    @media (max-width: 992px) {
+        font-size: 3em;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 1.8em;
+    }
     
 }
 
