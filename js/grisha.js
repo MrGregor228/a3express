@@ -22,3 +22,17 @@ divs.forEach((item,i) => {
 	item.style.backgroundImage = `url(${image[i]})`;
 });
 // console.log(owlItems);
+// smooth transfer
+$("li.navigation-menu__link a").click(function (e) {
+	e.preventDefault();
+	elementClick = $(this).attr("href");
+	destination = $(elementClick).offset().top;
+	$("body,html").animate({scrollTop: destination }, 800);
+});
+$(".navigation__brand a").click(function (e) {
+	e.preventDefault();
+	elementClick = $(this).attr("href");
+	destination = $(elementClick).offset().top;
+	$("body,html").animate({scrollTop: destination }, 800);
+});
+
