@@ -9,6 +9,7 @@ $(document).ready(function () {
 		autoplayTimeout: 7000,
 		autoplayHoverPause: true,
 		items: 1,
+		margin: 15,
 		responsiveClass: true
 	});
 	$('.falseNavigationLeft').click(function() {

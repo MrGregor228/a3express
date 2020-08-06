@@ -13,3 +13,12 @@ menuCloser.addEventListener('click', () => {
 		menu.classList.remove('opened');
 	}, 500);
 });
+
+let image = ['images/1.jpg', 'images/2.jpg', 'images/3.jpg', 'images/3.jpg', 'images/4.jpg', 'images/5.jpg'];
+
+const divs = document.querySelectorAll('.bgi-div');
+
+divs.forEach((item,i) => {
+	item.style.backgroundImage = `url(${image[i]})`;
+});
+// console.log(owlItems);

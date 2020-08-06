@@ -151,45 +151,36 @@ section {
 }
 
 .slider-1 {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+
     .owl-stage-outer {
-        max-width: 992px;
+        max-width: 768px;
         margin-right: auto;
         margin-left: auto;
     }
 
     .owl-stage {
         height: 100%;
-        .owl-item:nth-of-type(1) .bgi-div {
-            background-image: url('../images/1.jpg');
-        }
-    
-        .owl-item:nth-of-type(2) .bgi-div {
-            background-image: url('../images/2.jpg');
-        }
-    
-        .owl-item:nth-of-type(3) .bgi-div {
-            background-image: url('../images/3.jpg');
-        }
     }
 
     .owl-item {
-        max-width: 992px;
-        max-height: 450px;
-        background: #000;
-        
+
         .bgi-div {
-            width: auto;
-            height: 45vh;
+            max-width: 768px;
+            width: 100%;
+            height: 475px;
+            // border:1px solid red;           
 
             background-position: center center;
             background-size: cover;
             background-repeat: no-repeat;
-            
+
         }
 
-        
+
     }
-    
+
 
     .owl-controls {
         button {
@@ -199,7 +190,9 @@ section {
             background: none;
             border: none;
             color: white;
-            font-size: 40px;
+            font-size: 5em;
+            background-color: rgba(black, .6);
+
             cursor: pointer;
 
             &:hover,
@@ -209,10 +202,12 @@ section {
         }
 
         .falseNavigationLeft {
+            border-radius: 0 5px 5px 0;
             left: 0;
         }
 
         .falseNavigationRight {
+            border-radius: 5px 0 0 5px;
             right: 0;
         }
     }
@@ -378,13 +373,21 @@ section {
             justify-content: center;
         }
 
-        & span:after {
-            content: "\f004";
-            margin-left: 10px;
+        span:not(:first-child):before {
+            content: "";
+            background-image: url("https://i.ibb.co/C2gVk9Z/3-55.png");
+            display: inline-block;
+            width: 28px;
+            height: 25px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-right: 12px;
+            margin-left: 12px;
+           
 
             @media (max-width: 576px) {
-                content: "";
-                margin-left: 10px;
+                width: 15px;
+            height: 15px;
             }
         }
 
@@ -397,12 +400,16 @@ section {
 .header__phone {
     margin-top: 7rem;
     display: inline-block;
-    font-size: 4em;
+    font-size: 50px;
     text-decoration: none;
     color: #dc2c1d;
     display: flex;
     justify-content: center;
     margin-bottom: 3rem;
+    i, svg {
+        color:#5a585b;
+        fill:#5a585b;
+    }
 
     @media (max-width: 992px) {
         font-size: 3em;
@@ -532,7 +539,11 @@ section {
     align-items: center;
     margin-top: 40px;
     font-size: 50px;
-    color: #d22020;
+    a {
+        color: #d22020;
+    text-decoration: none;
+    }
+    
 }
 
 .we__soc {
