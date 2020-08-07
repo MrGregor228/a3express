@@ -24,14 +24,6 @@ navigationMenuLink.forEach(item => {
 	});
 });
 
-// let image = ['images/1.JPG', 'images/2.JPG', 'images/3.JPG', 'images/4.JPG', 'images/5.JPG'];
-
-// const divs = document.querySelectorAll('.bgi-div');
-
-// divs.forEach((item, i) => {
-// 	item.style.backgroundImage = `url(${image[i]})`;
-// });
-// console.log(owlItems);
 // smooth transfer
 $("li.navigation-menu__link a").click(function (e) {
 	e.preventDefault();
@@ -49,3 +41,5 @@ $(".navigation__brand a").click(function (e) {
 		scrollTop: destination
 	}, 350);
 });
+
+AOS.init();

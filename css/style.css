@@ -616,31 +616,31 @@ section:not(:first-child) {
   align-items: center;
   justify-content: center;
 }
-/* line 548, ../scss/style.scss */
+/* line 549, ../scss/style.scss */
 .ways .directions .directions__card:nth-of-type(1) {
   background-image: url("../images/seas/zalizny-port.jpg");
 }
-/* line 552, ../scss/style.scss */
+/* line 553, ../scss/style.scss */
 .ways .directions .directions__card:nth-of-type(2) {
   background-image: url("../images/seas/berdyansk.jpg");
 }
-/* line 556, ../scss/style.scss */
+/* line 557, ../scss/style.scss */
 .ways .directions .directions__card:nth-of-type(3) {
   background-image: url("../images/seas/lazurnoe.jpg");
 }
-/* line 560, ../scss/style.scss */
+/* line 561, ../scss/style.scss */
 .ways .directions .directions__card:nth-of-type(4) {
   background-image: url("../images/seas/kirilovka.jpg");
 }
-/* line 564, ../scss/style.scss */
+/* line 565, ../scss/style.scss */
 .ways .directions .directions__card:nth-of-type(5) {
   background-image: url("../images/seas/skadovsk.jpg");
 }
-/* line 568, ../scss/style.scss */
+/* line 569, ../scss/style.scss */
 .ways .directions .directions__card:nth-of-type(6) {
   background-image: url("../images/seas/schastlivcevo.jpg");
 }
-/* line 572, ../scss/style.scss */
+/* line 573, ../scss/style.scss */
 .ways .directions .directions__card:nth-of-type(7) {
   background-image: url("../images/seas/genichesk.jpg");
 }
@@ -658,20 +658,20 @@ section:not(:first-child) {
     height: 40vh;
   }
 }
-/* line 595, ../scss/style.scss */
+/* line 596, ../scss/style.scss */
 .ways .directions .directions__card .directions__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-/* line 601, ../scss/style.scss */
+/* line 602, ../scss/style.scss */
 .ways .directions .directions__card .directions__content .directions__icon {
   color: #fff;
   font-size: 2em;
   z-index: 2;
 }
-/* line 607, ../scss/style.scss */
+/* line 608, ../scss/style.scss */
 .ways .directions .directions__card .directions__content .directions__title {
   font-size: 1.8em;
   font-weight: 500;
@@ -679,7 +679,7 @@ section:not(:first-child) {
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
   z-index: 2;
 }
-/* line 615, ../scss/style.scss */
+/* line 616, ../scss/style.scss */
 .ways .directions .directions__card .directions__content .directions__link {
   color: #fff;
   font-size: 1em;
@@ -688,12 +688,12 @@ section:not(:first-child) {
   z-index: 2;
   transition: ease 0.3s all;
 }
-/* line 623, ../scss/style.scss */
+/* line 624, ../scss/style.scss */
 .ways .directions .directions__card .directions__content .directions__link:hover {
   text-decoration: none;
   transform: scale(1.1);
 }
-/* line 630, ../scss/style.scss */
+/* line 631, ../scss/style.scss */
 .ways .directions .directions__card .directions__price {
   font-size: 2em;
   position: absolute;
@@ -703,12 +703,12 @@ section:not(:first-child) {
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
   z-index: 2;
 }
-/* line 640, ../scss/style.scss */
+/* line 641, ../scss/style.scss */
 .ways .directions .directions__card:hover .directions__overlay {
   opacity: 1;
 }
 
-/* line 651, ../scss/style.scss */
+/* line 652, ../scss/style.scss */
 .sec5 {
   padding-right: 15px;
   padding-left: 15px;
@@ -719,30 +719,30 @@ section:not(:first-child) {
   margin-left: auto;
 }
 
-/* line 661, ../scss/style.scss */
+/* line 662, ../scss/style.scss */
 .why-us {
   font-family: "Lobster", cursive;
   text-align: center;
   font-size: 50px;
 }
-/* line 666, ../scss/style.scss */
+/* line 667, ../scss/style.scss */
 .why-us h2 {
   color: #db2c1d;
 }
 
-/* line 671, ../scss/style.scss */
+/* line 672, ../scss/style.scss */
 .inside {
   font-family: "Oswald", cursive;
   text-align: center;
   font-size: 25px;
 }
 
-/* line 677, ../scss/style.scss */
+/* line 678, ../scss/style.scss */
 .why-us__paragraph {
   margin-top: 10px;
   line-height: 1.5;
 }
-/* line 681, ../scss/style.scss */
+/* line 682, ../scss/style.scss */
 .why-us__paragraph:before {
   content: "";
   background-image: url("https://i.ibb.co/C2gVk9Z/3-55.png");
@@ -756,7 +756,7 @@ section:not(:first-child) {
   margin-top: 10px;
 }
 
-/* line 695, ../scss/style.scss */
+/* line 696, ../scss/style.scss */
 .end-text {
   margin-top: 40px;
   font-size: 20px;
@@ -766,16 +766,16 @@ section:not(:first-child) {
   line-height: 1.5;
 }
 
-/* line 705, ../scss/style.scss */
+/* line 706, ../scss/style.scss */
 .why-us__logo {
   margin-top: 50px;
 }
-/* line 708, ../scss/style.scss */
+/* line 709, ../scss/style.scss */
 .why-us__logo img {
   max-width: 280px;
 }
 
-/* line 713, ../scss/style.scss */
+/* line 714, ../scss/style.scss */
 .why-us__tel {
   font-family: "Oswald", cursive;
   text-align: center;
@@ -783,25 +783,25 @@ section:not(:first-child) {
   margin-top: 40px;
   font-size: 50px;
 }
-/* line 720, ../scss/style.scss */
+/* line 721, ../scss/style.scss */
 .why-us__tel a {
   color: #d22020;
   text-decoration: none;
 }
 @media (max-width: 992px) {
-  /* line 713, ../scss/style.scss */
+  /* line 714, ../scss/style.scss */
   .why-us__tel {
     font-size: 3em;
   }
 }
 @media (max-width: 576px) {
-  /* line 713, ../scss/style.scss */
+  /* line 714, ../scss/style.scss */
   .why-us__tel {
     font-size: 1.8em;
   }
 }
 
-/* line 735, ../scss/style.scss */
+/* line 736, ../scss/style.scss */
 .we__soc {
   font-family: "Oswald";
   text-align: center;
@@ -810,7 +810,7 @@ section:not(:first-child) {
   color: #000000;
 }
 
-/* line 743, ../scss/style.scss */
+/* line 744, ../scss/style.scss */
 .sec5__soc {
   display: flex;
   flex-wrap: wrap;
@@ -822,20 +822,20 @@ section:not(:first-child) {
   margin-left: auto;
   max-width: 768px;
 }
-/* line 754, ../scss/style.scss */
+/* line 755, ../scss/style.scss */
 .sec5__soc .social-link {
   flex: 1 1 50%;
   padding: 15px;
 }
 @media screen and (max-width: 768px) {
-  /* line 754, ../scss/style.scss */
+  /* line 755, ../scss/style.scss */
   .sec5__soc .social-link {
     flex: 1 1 100%;
     padding-top: 0;
     padding-bottom: 0;
   }
 }
-/* line 764, ../scss/style.scss */
+/* line 765, ../scss/style.scss */
 .sec5__soc .social-link ul {
   font-family: 'Roboto', sans-serif;
   display: flex;
@@ -844,19 +844,19 @@ section:not(:first-child) {
   width: -moz-max-content;
   width: max-content;
 }
-/* line 772, ../scss/style.scss */
+/* line 773, ../scss/style.scss */
 .sec5__soc .social-link ul:first-child {
   margin-left: auto;
 }
-/* line 776, ../scss/style.scss */
+/* line 777, ../scss/style.scss */
 .sec5__soc .social-link ul:nth-child(1) {
   margin-right: auto;
 }
-/* line 781, ../scss/style.scss */
+/* line 782, ../scss/style.scss */
 .sec5__soc .social-link ul li img {
   margin-right: 5px;
 }
-/* line 785, ../scss/style.scss */
+/* line 786, ../scss/style.scss */
 .sec5__soc .social-link ul li a {
   text-decoration: none;
   color: #000;
@@ -864,7 +864,7 @@ section:not(:first-child) {
   top: -7px;
 }
 
-/* line 797, ../scss/style.scss */
+/* line 798, ../scss/style.scss */
 .title-footer {
   font-family: "Oswald";
   text-align: center;
@@ -875,7 +875,7 @@ section:not(:first-child) {
   padding: 15px;
 }
 
-/* line 807, ../scss/style.scss */
+/* line 808, ../scss/style.scss */
 .title-footer__two {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -883,13 +883,13 @@ section:not(:first-child) {
   padding: 0px 10px 15px 0px;
 }
 
-/* line 814, ../scss/style.scss */
+/* line 815, ../scss/style.scss */
 .footer-link {
   color: #fff;
   font-weight: lighter;
 }
 
-/* line 820, ../scss/style.scss */
+/* line 821, ../scss/style.scss */
 .footer {
   background-color: #727b8d;
 }
