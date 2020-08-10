@@ -292,7 +292,6 @@ section:not(:first-child) {
   border: none;
   color: white;
   font-size: 5em;
-  background-color: rgba(0, 0, 0, 0.6);
   width: 55px;
   cursor: pointer;
 }
