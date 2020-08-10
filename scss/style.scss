@@ -252,7 +252,7 @@ section {
             font-size: 5em;
             
 
-            // width: 55px;
+            // width: 50px;
 
             cursor: pointer;
 
@@ -265,11 +265,15 @@ section {
         .falseNavigationLeft {
             border-radius: 0 5px 5px 0;
             left: 0;
+            text-align: left;
+            margin-left:auto;
         }
 
         .falseNavigationRight {
             border-radius: 5px 0 0 5px;
             right: 0;
+            text-align: right;
+            margin-right:auto;
         }
     }
 }
