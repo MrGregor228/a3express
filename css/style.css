@@ -296,7 +296,6 @@ section:not(:first-child) {
   border: none;
   color: white;
   font-size: 5em;
-  width: 55px;
   cursor: pointer;
 }
 /* line 259, ../scss/style.scss */
