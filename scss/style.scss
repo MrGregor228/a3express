@@ -238,6 +238,8 @@ section {
 
 
     .owl-controls {
+        display: flex;
+        justify-content: space-between;
         button {
             position: absolute;
             top: 50%;
@@ -247,9 +249,6 @@ section {
             border: none;
             color: white;
             font-size: 5em;
-            
-
-            // width: 50px;
 
             cursor: pointer;
 
