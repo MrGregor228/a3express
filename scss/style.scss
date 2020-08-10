@@ -242,10 +242,7 @@ section {
             position: absolute;
             top: 50%;
             transform: translate(0%, -50%);
-            transform: -webkit-translate(0%, -50%);
-            transform: -moz-translate(0%, -50%);
-            transform: -o-translate(0%, -50%);
-            transform: -ms-translate(0%, -50%);
+            -webkit-transform: translate(0%, -50%);            
             background: none;
             border: none;
             color: white;
