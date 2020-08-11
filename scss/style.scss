@@ -95,6 +95,9 @@ section {
             .navigation-menu__link {
                 font-size: 20px;
                 padding: 3px 8px;
+                // max-width: -webkit-max-content;
+                // max-width: -moz-max-content;
+                // max-width: max-content;
 
                 &:after {
                     content: "";
@@ -123,37 +126,56 @@ section {
                 display: none;
             }
 
-            @media screen and (max-width: 992px) {
-                display: none;
-                background-color: #fff;
+            // @media screen and (max-width: 992px) {
+            //     display: none;
+            //     background-color: #fff;
+            //     overflow: hidden;
+            //     position: fixed;
+            //     top: 0%;
+            //     left: 0;
+            //     height: 100vh;
+            //     width: 100%;
+
+            //     .navigation-menu__link {
+            //         margin-top: 10px;
+            //     }
+
+            //     .menuCloser {
+            //         display: block;
+            //         margin-top: 25px;
+
+            //         .close {
+            //             background: none;
+            //             border: none;
+            //             font-size: 25px;
+            //             color: #4d4d4d;
+            //         }
+            //     }
+
+            //     &.opened {
+            //         display: flex;
+            //         flex-direction: column;
+            //         align-items: center;
+            //         justify-content: center;
+            //         -webkit-animation: menuOpen 0.5s linear alternate both;
+            //         animation: menuOpen 0.5s linear alternate both;
+            //     }
+
+            //     &.closed {
+            //         -webkit-animation: menuClose 0.5s linear alternate both;
+            //         animation: menuClose 0.5s linear alternate both;
+            //     }
+            // }
+            @media screen and (max-width:992px) {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                height: 0px;
                 overflow: hidden;
-                position: fixed;
-                top: 0%;
-                left: 0;
-                height: 100vh;
                 width: 100%;
 
-                .navigation-menu__link {
-                    margin-top: 10px;
-                }
-
-                .menuCloser {
-                    display: block;
-                    margin-top: 25px;
-
-                    .close {
-                        background: none;
-                        border: none;
-                        font-size: 25px;
-                        color: #4d4d4d;
-                    }
-                }
-
-                &.opened {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
+                &.opened {                    
+                    
                     -webkit-animation: menuOpen 0.5s linear alternate both;
                     animation: menuOpen 0.5s linear alternate both;
                 }
@@ -161,6 +183,27 @@ section {
                 &.closed {
                     -webkit-animation: menuClose 0.5s linear alternate both;
                     animation: menuClose 0.5s linear alternate both;
+                }
+                &.navigation-menu {
+                    margin-right: -15px;
+                    margin-left: -15px;
+                }
+                .navigation-menu__link {    
+                    padding: 15px  15px;   
+                    &:after {
+                        display: none;
+    
+                    }
+    
+                    &:hover:after {
+                        width: 0;
+                    }                 
+                   &:not(:last-child) {
+                       border-bottom: 1px solid black;
+                   }
+                   &:last-child {
+                       padding-bottom:3px;
+                   }
                 }
             }
         }
@@ -240,11 +283,12 @@ section {
     .owl-controls {
         display: flex;
         justify-content: space-between;
+
         button {
             position: absolute;
             top: 50%;
             transform: translate(0%, -50%);
-            -webkit-transform: translate(0%, -50%);            
+            -webkit-transform: translate(0%, -50%);
             background: none;
             border: none;
             color: white;
@@ -262,14 +306,14 @@ section {
             border-radius: 0 5px 5px 0;
             left: 0;
             text-align: left;
-            margin-left:auto;
+            margin-left: auto;
         }
 
         .falseNavigationRight {
             border-radius: 5px 0 0 5px;
             right: 0;
             text-align: right;
-            margin-right:auto;
+            margin-right: auto;
         }
     }
 }
@@ -548,7 +592,7 @@ section {
             flex: 0 1 45%;
             position: relative;
             padding: 5rem 0;
-            
+
 
             &:nth-of-type(1) {
                 background-image: url('../images/seas/zalizny-port.jpg');
