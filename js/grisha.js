@@ -67,13 +67,13 @@ window.addEventListener('resize', () => {
 window.addEventListener('DOMContentLoaded', () =>{
 	const rightSliderButton = document.querySelector('.falseNavigationRight'),
 		  leftSliderButton = document.querySelector('.falseNavigationLeft'),
-		  owlStage = document.querySelector('.owl-stage-outer');
+		  owlStageOuter = document.querySelector('.owl-stage-outer');
 
-	rightSliderButton.style.top = `${(owlStage.clientHeight / 2) - (rightSliderButton.clientHeight / 2)}px`;
-	leftSliderButton.style.top = `${(owlStage.clientHeight / 2) - (leftSliderButton.clientHeight / 2)}px`;
+	rightSliderButton.style.top = `${(owlStageOuter.clientHeight / 2) - (rightSliderButton.clientHeight / 2)}px`;
+	leftSliderButton.style.top = `${(owlStageOuter.clientHeight / 2) - (leftSliderButton.clientHeight / 2)}px`;
 
-	rightSliderButton.style.right = `${owlStage.clientWidth - owlStage.clientWidth}px`;
-	leftSliderButton.style.left = `${owlStage.clientWidth - owlStage.clientWidth}px`;
+	rightSliderButton.style.right = `${owlStageOuter.clientWidth - owlStageOuter.clientWidth}px`;
+	leftSliderButton.style.left = `${owlStageOuter.clientWidth - owlStageOuter.clientWidth}px`;
 
 });
 
