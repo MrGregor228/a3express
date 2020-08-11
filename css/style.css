@@ -294,8 +294,6 @@ section:not(:first-child) {
 /* line 297, ../scss/style.scss */
 .slider-1 .falseNavigationLeft {
   border-radius: 0 5px 5px 0;
-  transform: translate(0%, -50%);
-  -webkit-transform: translate(0%, -50%);
   left: 0;
   text-align: left;
   margin-left: auto;
@@ -303,8 +301,6 @@ section:not(:first-child) {
 /* line 306, ../scss/style.scss */
 .slider-1 .falseNavigationRight {
   border-radius: 5px 0 0 5px;
-  transform: translate(0%, -50%);
-  -webkit-transform: translate(0%, -50%);
   right: 0;
   text-align: right;
   margin-right: auto;

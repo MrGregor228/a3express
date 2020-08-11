@@ -296,8 +296,8 @@ section {
     }
     .falseNavigationLeft {
         border-radius: 0 5px 5px 0;
-        transform: translate(0%, -50%);
-        -webkit-transform: translate(0%, -50%);
+        // transform: translate(0%, -50%);
+        // -webkit-transform: translate(0%, -50%);
         left: 0;
         text-align: left;
         margin-left: auto;
@@ -305,8 +305,8 @@ section {
 
     .falseNavigationRight {
         border-radius: 5px 0 0 5px;
-        transform: translate(0%, -50%);
-        -webkit-transform: translate(0%, -50%);
+        // transform: translate(0%, -50%);
+        // -webkit-transform: translate(0%, -50%);
         right: 0;
         text-align: right;
         margin-right: auto;
