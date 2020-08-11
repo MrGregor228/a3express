@@ -279,7 +279,7 @@ section {
 
         button {
             position: absolute;
-            top: 50%;            
+            // top: 50%;            
             background: none;
             border: none;
             color: white;
@@ -295,21 +295,14 @@ section {
         
     }
     .falseNavigationLeft {
-        border-radius: 0 5px 5px 0;
-        // transform: translate(0%, -50%);
-        // -webkit-transform: translate(0%, -50%);
-        left: 0;
-        text-align: left;
-        margin-left: auto;
+        border-radius: 0 5px 5px 0;        
+        // margin-left: auto;
     }
 
     .falseNavigationRight {
-        border-radius: 5px 0 0 5px;
-        // transform: translate(0%, -50%);
-        // -webkit-transform: translate(0%, -50%);
-        right: 0;
-        text-align: right;
-        margin-right: auto;
+        border-radius: 5px 0 0 5px;        
+        
+        // margin-right: auto;
     }
 }
 
