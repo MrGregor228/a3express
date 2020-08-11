@@ -279,9 +279,7 @@ section {
 
         button {
             position: absolute;
-            top: 50%;
-            transform: translate(0%, -50%);
-            -webkit-transform: translate(0%, -50%);
+            top: 50%;            
             background: none;
             border: none;
             color: white;
@@ -294,20 +292,24 @@ section {
                 color: rgba(#fff, .7);
             }
         }
+        
+    }
+    .falseNavigationLeft {
+        border-radius: 0 5px 5px 0;
+        transform: translate(0%, -50%);
+        -webkit-transform: translate(0%, -50%);
+        left: 0;
+        text-align: left;
+        margin-left: auto;
+    }
 
-        .falseNavigationLeft {
-            border-radius: 0 5px 5px 0;
-            left: 0;
-            text-align: left;
-            margin-left: auto;
-        }
-
-        .falseNavigationRight {
-            border-radius: 5px 0 0 5px;
-            right: 0;
-            text-align: right;
-            margin-right: auto;
-        }
+    .falseNavigationRight {
+        border-radius: 5px 0 0 5px;
+        transform: translate(0%, -50%);
+        -webkit-transform: translate(0%, -50%);
+        right: 0;
+        text-align: right;
+        margin-right: auto;
     }
 }
 
