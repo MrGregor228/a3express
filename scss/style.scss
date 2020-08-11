@@ -12,7 +12,7 @@
 }
 
 body {
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
 }
 
 button {
@@ -107,8 +107,7 @@ section {
                     margin-top: 3px;
                     background-color: #dc2c1d;
 
-                    transition: .2s linear;
-
+                    transition: 0.2s linear;
                 }
 
                 &:hover:after {
@@ -118,7 +117,6 @@ section {
                 a {
                     text-decoration: none;
                     color: #4d4d4d;
-
                 }
             }
 
@@ -166,7 +164,7 @@ section {
             //         animation: menuClose 0.5s linear alternate both;
             //     }
             // }
-            @media screen and (max-width:992px) {
+            @media screen and (max-width: 992px) {
                 display: flex;
                 flex-direction: column;
                 flex-wrap: nowrap;
@@ -174,8 +172,8 @@ section {
                 overflow: hidden;
                 width: 100%;
 
-                // &.opened {                    
-                    
+                // &.opened {
+
                 //     -webkit-animation: menuOpen 0.5s linear alternate both;
                 //     animation: menuOpen 0.5s linear alternate both;
                 // }
@@ -188,22 +186,21 @@ section {
                     margin-right: -15px;
                     margin-left: -15px;
                 }
-                .navigation-menu__link {    
-                    padding: 15px  15px;   
+                .navigation-menu__link {
+                    padding: 15px 15px;
                     &:after {
                         display: none;
-    
                     }
-    
+
                     &:hover:after {
                         width: 0;
-                    }                 
-                   &:not(:last-child) {
-                       border-bottom: 1px solid black;
-                   }
-                   &:last-child {
-                       padding-bottom:3px;
-                   }
+                    }
+                    &:not(:last-child) {
+                        border-bottom: 1px solid black;
+                    }
+                    &:last-child {
+                        padding-bottom: 3px;
+                    }
                 }
             }
         }
@@ -234,52 +231,48 @@ section {
     }
 
     .owl-item {
-
         .bgi-div {
             max-width: 768px;
             width: 100%;
             height: 475px;
-
         }
 
         &:nth-of-type(1) {
             .bgi-div {
-                background: url('../images/1.JPG') no-repeat bottom center;
+                background: url("../images/1.JPG") no-repeat bottom center;
                 background-size: cover;
             }
         }
 
         &:nth-of-type(2) {
             .bgi-div {
-                background: url('../images/2.JPG') no-repeat bottom center;
+                background: url("../images/2.JPG") no-repeat bottom center;
                 background-size: cover;
             }
         }
 
         &:nth-of-type(3) {
             .bgi-div {
-                background: url('../images/3.JPG') no-repeat bottom center;
+                background: url("../images/3.JPG") no-repeat bottom center;
                 background-size: cover;
             }
         }
 
         &:nth-of-type(4) {
             .bgi-div {
-                background: url('../images/4.JPG') no-repeat bottom center;
+                background: url("../images/4.JPG") no-repeat bottom center;
                 background-size: cover;
             }
         }
-
     }
 
-
-    .owl-controls {        
+    .owl-controls {
         display: flex;
         justify-content: space-between;
 
         button {
             position: absolute;
-            // top: 50%;            
+            // top: 50%;
             background: none;
             border: none;
             color: white;
@@ -289,23 +282,21 @@ section {
 
             &:hover,
             &:active {
-                color: rgba(#fff, .7);
+                color: rgba(#fff, 0.7);
             }
         }
-        
     }
     .falseNavigationLeft {
-        border-radius: 0 5px 5px 0;        
+        border-radius: 0 5px 5px 0;
         // margin-left: auto;
     }
 
     .falseNavigationRight {
-        border-radius: 5px 0 0 5px;        
-        
+        border-radius: 5px 0 0 5px;
+
         // margin-right: auto;
     }
 }
-
 
 // @keyframes menuOpen {
 //     0% {
@@ -326,7 +317,6 @@ section {
 //         top: 0%;
 //     }
 // }
-
 
 // @keyframes menuClose {
 //     0% {
@@ -352,7 +342,6 @@ section {
 
 // -------------------- Alex ---------------------
 
-
 .header {
     position: relative;
     padding: 9em 0 2em 0;
@@ -360,7 +349,6 @@ section {
     background-size: cover;
     height: 100vh;
     text-align: center;
-
 
     @media (max-width: 768px) {
         max-height: 600px;
@@ -466,7 +454,6 @@ section {
             margin-right: 12px;
             margin-left: 12px;
 
-
             @media (max-width: 576px) {
                 width: 15px;
                 height: 15px;
@@ -517,7 +504,7 @@ section {
     display: flex;
     text-align: center;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
     @media (max-width: 768px) {
         flex-wrap: wrap;
@@ -532,13 +519,13 @@ section {
 
         img {
             width: 6em;
-            margin-bottom: .9rem;
+            margin-bottom: 0.9rem;
         }
 
         .icon {
             font-size: 2.5em;
-            color: #7E7B7F;
-            margin-bottom: .7rem;
+            color: #7e7b7f;
+            margin-bottom: 0.7rem;
         }
 
         .advantages__text {
@@ -581,33 +568,32 @@ section {
             position: relative;
             padding: 5rem 0;
 
-
             &:nth-of-type(1) {
-                background-image: url('../images/seas/zalizny-port.jpg');
+                background-image: url("../images/seas/zalizny-port.jpg");
             }
 
             &:nth-of-type(2) {
-                background-image: url('../images/seas/berdyansk.jpg');
+                background-image: url("../images/seas/berdyansk.jpg");
             }
 
             &:nth-of-type(3) {
-                background-image: url('../images/seas/lazurnoe.jpg');
+                background-image: url("../images/seas/lazurnoe.jpg");
             }
 
             &:nth-of-type(4) {
-                background-image: url('../images/seas/kirilovka.jpg');
+                background-image: url("../images/seas/kirilovka.jpg");
             }
 
             &:nth-of-type(5) {
-                background-image: url('../images/seas/skadovsk.jpg');
+                background-image: url("../images/seas/skadovsk.jpg");
             }
 
             &:nth-of-type(6) {
-                background-image: url('../images/seas/schastlivcevo.jpg');
+                background-image: url("../images/seas/schastlivcevo.jpg");
             }
 
             &:nth-of-type(7) {
-                background-image: url('../images/seas/genichesk.jpg');
+                background-image: url("../images/seas/genichesk.jpg");
             }
 
             background-repeat: no-repeat;
@@ -652,7 +638,7 @@ section {
                 .directions__link {
                     color: #fff;
                     font-size: 1em;
-                    font-family: 'Roboto', sans-serif;
+                    font-family: "Roboto", sans-serif;
                     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
                     z-index: 2;
                     transition: ease 0.3s all;
@@ -667,7 +653,7 @@ section {
             .directions__price {
                 font-size: 2em;
                 position: absolute;
-                bottom: .5rem;
+                bottom: 0.5rem;
                 right: 1rem;
                 transform: translate(0%, -50%);
                 text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
@@ -766,7 +752,6 @@ section {
     @media (max-width: 576px) {
         font-size: 1.8em;
     }
-
 }
 
 .we__soc {
@@ -792,14 +777,14 @@ section {
         flex: 1 1 50%;
         padding: 15px;
 
-        @media screen and (max-width:768px) {
+        @media screen and (max-width: 768px) {
             flex: 1 1 100%;
             padding-top: 0;
             padding-bottom: 0;
         }
 
         ul {
-            font-family: 'Roboto', sans-serif;
+            font-family: "Roboto", sans-serif;
             display: flex;
             flex-direction: column;
             width: -webkit-max-content;
@@ -827,7 +812,6 @@ section {
                 }
             }
         }
-
     }
 }
 
