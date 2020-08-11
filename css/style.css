@@ -195,16 +195,6 @@ section:not(:first-child) {
     overflow: hidden;
     width: 100%;
   }
-  /* line 177, ../scss/style.scss */
-  .navigation .navigation__inner-wrapper .navigation-menu.opened {
-    -webkit-animation: menuOpen 0.5s linear alternate both;
-    animation: menuOpen 0.5s linear alternate both;
-  }
-  /* line 183, ../scss/style.scss */
-  .navigation .navigation__inner-wrapper .navigation-menu.closed {
-    -webkit-animation: menuClose 0.5s linear alternate both;
-    animation: menuClose 0.5s linear alternate both;
-  }
   /* line 187, ../scss/style.scss */
   .navigation .navigation__inner-wrapper .navigation-menu.navigation-menu {
     margin-right: -15px;
@@ -322,38 +312,6 @@ section:not(:first-child) {
   margin-right: auto;
 }
 
-@keyframes menuOpen {
-  0% {
-    top: -100%;
-  }
-  100% {
-    top: 0%;
-  }
-}
-@-webkit-keyframes menuOpen {
-  0% {
-    top: -100%;
-  }
-  100% {
-    top: 0%;
-  }
-}
-@keyframes menuClose {
-  0% {
-    top: 0%;
-  }
-  100% {
-    top: -100%;
-  }
-}
-@-webkit-keyframes menuClose {
-  0% {
-    top: 0%;
-  }
-  100% {
-    top: -100%;
-  }
-}
 /* line 368, ../scss/style.scss */
 .header {
   position: relative;

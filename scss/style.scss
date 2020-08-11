@@ -174,16 +174,16 @@ section {
                 overflow: hidden;
                 width: 100%;
 
-                &.opened {                    
+                // &.opened {                    
                     
-                    -webkit-animation: menuOpen 0.5s linear alternate both;
-                    animation: menuOpen 0.5s linear alternate both;
-                }
+                //     -webkit-animation: menuOpen 0.5s linear alternate both;
+                //     animation: menuOpen 0.5s linear alternate both;
+                // }
 
-                &.closed {
-                    -webkit-animation: menuClose 0.5s linear alternate both;
-                    animation: menuClose 0.5s linear alternate both;
-                }
+                // &.closed {
+                //     -webkit-animation: menuClose 0.5s linear alternate both;
+                //     animation: menuClose 0.5s linear alternate both;
+                // }
                 &.navigation-menu {
                     margin-right: -15px;
                     margin-left: -15px;
@@ -319,46 +319,46 @@ section {
 }
 
 
-@keyframes menuOpen {
-    0% {
-        top: -100%;
-    }
+// @keyframes menuOpen {
+//     0% {
+//         top: -100%;
+//     }
 
-    100% {
-        top: 0%;
-    }
-}
+//     100% {
+//         top: 0%;
+//     }
+// }
 
-@-webkit-keyframes menuOpen {
-    0% {
-        top: -100%;
-    }
+// @-webkit-keyframes menuOpen {
+//     0% {
+//         top: -100%;
+//     }
 
-    100% {
-        top: 0%;
-    }
-}
+//     100% {
+//         top: 0%;
+//     }
+// }
 
 
-@keyframes menuClose {
-    0% {
-        top: 0%;
-    }
+// @keyframes menuClose {
+//     0% {
+//         top: 0%;
+//     }
 
-    100% {
-        top: -100%;
-    }
-}
+//     100% {
+//         top: -100%;
+//     }
+// }
 
-@-webkit-keyframes menuClose {
-    0% {
-        top: 0%;
-    }
+// @-webkit-keyframes menuClose {
+//     0% {
+//         top: 0%;
+//     }
 
-    100% {
-        top: -100%;
-    }
-}
+//     100% {
+//         top: -100%;
+//     }
+// }
 
 // -------------------- Gregory ------------------
 
