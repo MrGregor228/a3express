@@ -56,4 +56,12 @@ $(".navigation__brand a").click(function (e) {
 	}, 350);
 });
 
+window.addEventListener('resize', () => {
+	if (document.body.clientWidth < 992) {
+		console.log('Body width < 992px');
+	} else {
+		menu.style.height = 'auto';
+	}
+});
+
 AOS.init();
