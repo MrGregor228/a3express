@@ -65,11 +65,12 @@ window.addEventListener('resize', () => {
 });
 
 window.addEventListener('DOMContentLoaded', () => {
-	window.addEventListener('resize', () => {
-		const rightSliderButton = document.querySelector('.falseNavigationRight'),
-			  owlStageOuter = document.querySelector('.owl-stage-outer'),
-			  controls = document.querySelector('.controls');
+	const rightSliderButton = document.querySelector('.falseNavigationRight'),
+		owlStageOuter = document.querySelector('.owl-stage-outer'),
+		controls = document.querySelector('.controls');
 
+	controls.style.top = `${(owlStageOuter.clientHeight / 2.25) - (rightSliderButton.clientHeight / 2.25)}px`;
+	window.addEventListener('resize', () => {
 		controls.style.top = `${(owlStageOuter.clientHeight / 2.25) - (rightSliderButton.clientHeight / 2.25)}px`;
 	});
 });
