@@ -274,7 +274,11 @@ section {
     .controls {
         display: flex;
         justify-content: space-between;
-        position: absolute;        
+        position: absolute;  
+        
+        overflow: visible;
+        
+        visibility: visible;      
         width: 100%;
         height: 0px;
 
@@ -283,7 +287,9 @@ section {
             border: none;
             color: white;
             font-size: 5em;
-
+            
+            visibility: visible; 
+            
             cursor: pointer;
 
             &:hover,

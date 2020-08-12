@@ -278,31 +278,34 @@ section:not(:first-child) {
   display: flex;
   justify-content: space-between;
   position: absolute;
+  overflow: visible;
+  visibility: visible;
   width: 100%;
   height: 0px;
 }
-/* line 281, ../scss/style.scss */
+/* line 285, ../scss/style.scss */
 .slider-1 .controls button {
   background: none;
   border: none;
   color: white;
   font-size: 5em;
+  visibility: visible;
   cursor: pointer;
 }
-/* line 289, ../scss/style.scss */
+/* line 295, ../scss/style.scss */
 .slider-1 .controls button:hover, .slider-1 .controls button:active {
   color: rgba(255, 255, 255, 0.7);
 }
-/* line 296, ../scss/style.scss */
+/* line 302, ../scss/style.scss */
 .slider-1 .falseNavigationLeft {
   border-radius: 0 5px 5px 0;
 }
-/* line 301, ../scss/style.scss */
+/* line 307, ../scss/style.scss */
 .slider-1 .falseNavigationRight {
   border-radius: 5px 0 0 5px;
 }
 
-/* line 352, ../scss/style.scss */
+/* line 358, ../scss/style.scss */
 .header {
   position: relative;
   padding: 9em 0 2em 0;
@@ -312,24 +315,24 @@ section:not(:first-child) {
   text-align: center;
 }
 @media (max-width: 768px) {
-  /* line 352, ../scss/style.scss */
+  /* line 358, ../scss/style.scss */
   .header {
     max-height: 600px;
     padding: 6em 0 2em 0;
   }
 }
 @media (max-width: 576px) {
-  /* line 352, ../scss/style.scss */
+  /* line 358, ../scss/style.scss */
   .header {
     padding: 3em 0 2em 0;
   }
 }
-/* line 369, ../scss/style.scss */
+/* line 375, ../scss/style.scss */
 .header .container {
   max-width: 1110px;
   margin: 0 auto;
 }
-/* line 374, ../scss/style.scss */
+/* line 380, ../scss/style.scss */
 .header .header__title {
   font-family: "Lobster", cursive;
   font-size: 8em;
@@ -339,53 +342,53 @@ section:not(:first-child) {
   margin: 0 auto 3rem auto;
 }
 @media (max-width: 992px) {
-  /* line 374, ../scss/style.scss */
+  /* line 380, ../scss/style.scss */
   .header .header__title {
     font-size: 6em;
     max-width: 65%;
   }
 }
 @media (max-width: 768px) {
-  /* line 374, ../scss/style.scss */
+  /* line 380, ../scss/style.scss */
   .header .header__title {
     font-size: 4em;
     max-width: 60%;
   }
 }
 @media (max-width: 576px) {
-  /* line 374, ../scss/style.scss */
+  /* line 380, ../scss/style.scss */
   .header .header__title {
     font-size: 3em;
     max-width: 60%;
   }
 }
-/* line 398, ../scss/style.scss */
+/* line 404, ../scss/style.scss */
 .header .header__title_left {
   text-align: left;
 }
-/* line 402, ../scss/style.scss */
+/* line 408, ../scss/style.scss */
 .header .header__title_right {
   display: block;
   text-align: right;
 }
-/* line 407, ../scss/style.scss */
+/* line 413, ../scss/style.scss */
 .header .header__subtitle {
   font-size: 3.5em;
   margin-bottom: 3rem;
 }
 @media (max-width: 992px) {
-  /* line 407, ../scss/style.scss */
+  /* line 413, ../scss/style.scss */
   .header .header__subtitle {
     font-size: 2.5em;
   }
 }
 @media (max-width: 768px) {
-  /* line 407, ../scss/style.scss */
+  /* line 413, ../scss/style.scss */
   .header .header__subtitle {
     font-size: 2em;
   }
 }
-/* line 419, ../scss/style.scss */
+/* line 425, ../scss/style.scss */
 .header .header__subtitle:before {
   content: "";
   height: 3px;
@@ -395,12 +398,12 @@ section:not(:first-child) {
   margin: 0 auto 20px auto;
 }
 @media (max-width: 768px) {
-  /* line 419, ../scss/style.scss */
+  /* line 425, ../scss/style.scss */
   .header .header__subtitle:before {
     height: 2px;
   }
 }
-/* line 433, ../scss/style.scss */
+/* line 439, ../scss/style.scss */
 .header .header__text {
   font-weight: 500;
   font-size: 3em;
@@ -408,26 +411,26 @@ section:not(:first-child) {
   margin: 0 2rem;
 }
 @media (max-width: 992px) {
-  /* line 433, ../scss/style.scss */
+  /* line 439, ../scss/style.scss */
   .header .header__text {
     font-size: 2em;
   }
 }
 @media (max-width: 768px) {
-  /* line 433, ../scss/style.scss */
+  /* line 439, ../scss/style.scss */
   .header .header__text {
     font-size: 1.7em;
   }
 }
 @media (max-width: 576px) {
-  /* line 433, ../scss/style.scss */
+  /* line 439, ../scss/style.scss */
   .header .header__text {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 }
-/* line 453, ../scss/style.scss */
+/* line 459, ../scss/style.scss */
 .header .header__text span:not(:first-child):before {
   content: "";
   background-image: url("https://i.ibb.co/C2gVk9Z/3-55.png");
@@ -440,18 +443,18 @@ section:not(:first-child) {
   margin-left: 12px;
 }
 @media (max-width: 576px) {
-  /* line 453, ../scss/style.scss */
+  /* line 459, ../scss/style.scss */
   .header .header__text span:not(:first-child):before {
     width: 15px;
     height: 15px;
   }
 }
-/* line 470, ../scss/style.scss */
+/* line 476, ../scss/style.scss */
 .header .header__text span:last-child:after {
   display: none;
 }
 
-/* line 476, ../scss/style.scss */
+/* line 482, ../scss/style.scss */
 .header__phone {
   margin-top: 7rem;
   display: inline-block;
@@ -462,28 +465,28 @@ section:not(:first-child) {
   justify-content: center;
   margin-bottom: 3rem;
 }
-/* line 486, ../scss/style.scss */
+/* line 492, ../scss/style.scss */
 .header__phone i,
 .header__phone svg {
   color: #5a585b;
   fill: #5a585b;
 }
 @media (max-width: 992px) {
-  /* line 476, ../scss/style.scss */
+  /* line 482, ../scss/style.scss */
   .header__phone {
     font-size: 3em;
     margin-top: 0;
   }
 }
 @media (max-width: 576px) {
-  /* line 476, ../scss/style.scss */
+  /* line 482, ../scss/style.scss */
   .header__phone {
     font-size: 1.8em;
     margin-top: 0;
   }
 }
 
-/* line 503, ../scss/style.scss */
+/* line 509, ../scss/style.scss */
 .title {
   font-family: "Lobster", cursive;
   font-size: 3em;
@@ -491,7 +494,7 @@ section:not(:first-child) {
   margin-bottom: 3rem;
 }
 
-/* line 510, ../scss/style.scss */
+/* line 516, ../scss/style.scss */
 .advantages {
   display: flex;
   text-align: center;
@@ -499,55 +502,55 @@ section:not(:first-child) {
   justify-content: space-around;
 }
 @media (max-width: 768px) {
-  /* line 510, ../scss/style.scss */
+  /* line 516, ../scss/style.scss */
   .advantages {
     flex-wrap: wrap;
     justify-content: space-around;
   }
 }
 @media (max-width: 768px) {
-  /* line 521, ../scss/style.scss */
+  /* line 527, ../scss/style.scss */
   .advantages .advantages__item {
     flex: 0 1 30%;
     margin-bottom: 20px;
   }
 }
-/* line 527, ../scss/style.scss */
+/* line 533, ../scss/style.scss */
 .advantages .advantages__item img {
   width: 6em;
   margin-bottom: 0.9rem;
 }
-/* line 532, ../scss/style.scss */
+/* line 538, ../scss/style.scss */
 .advantages .advantages__item .icon {
   font-size: 2.5em;
   color: #7e7b7f;
   margin-bottom: 0.7rem;
 }
-/* line 538, ../scss/style.scss */
+/* line 544, ../scss/style.scss */
 .advantages .advantages__item .advantages__text {
   width: 8rem;
 }
 @media (max-width: 768px) {
-  /* line 538, ../scss/style.scss */
+  /* line 544, ../scss/style.scss */
   .advantages .advantages__item .advantages__text {
     width: auto;
   }
 }
 
-/* line 548, ../scss/style.scss */
+/* line 554, ../scss/style.scss */
 .ways {
   padding: 3rem 0;
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
 }
-/* line 554, ../scss/style.scss */
+/* line 560, ../scss/style.scss */
 .ways .directions {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-/* line 559, ../scss/style.scss */
+/* line 565, ../scss/style.scss */
 .ways .directions .directions__overlay {
   position: absolute;
   top: 0;
@@ -558,7 +561,7 @@ section:not(:first-child) {
   background-color: rgba(0, 0, 0, 0.4);
   transition: ease 0.4s all;
 }
-/* line 570, ../scss/style.scss */
+/* line 576, ../scss/style.scss */
 .ways .directions .directions__card {
   position: relative;
   transition: ease 0.4s all;
@@ -575,62 +578,62 @@ section:not(:first-child) {
   align-items: center;
   justify-content: center;
 }
-/* line 578, ../scss/style.scss */
+/* line 584, ../scss/style.scss */
 .ways .directions .directions__card:nth-of-type(1) {
   background-image: url("../images/seas/zalizny-port.jpg");
 }
-/* line 582, ../scss/style.scss */
+/* line 588, ../scss/style.scss */
 .ways .directions .directions__card:nth-of-type(2) {
   background-image: url("../images/seas/berdyansk.jpg");
 }
-/* line 586, ../scss/style.scss */
+/* line 592, ../scss/style.scss */
 .ways .directions .directions__card:nth-of-type(3) {
   background-image: url("../images/seas/lazurnoe.jpg");
 }
-/* line 590, ../scss/style.scss */
+/* line 596, ../scss/style.scss */
 .ways .directions .directions__card:nth-of-type(4) {
   background-image: url("../images/seas/kirilovka.jpg");
 }
-/* line 594, ../scss/style.scss */
+/* line 600, ../scss/style.scss */
 .ways .directions .directions__card:nth-of-type(5) {
   background-image: url("../images/seas/skadovsk.jpg");
 }
-/* line 598, ../scss/style.scss */
+/* line 604, ../scss/style.scss */
 .ways .directions .directions__card:nth-of-type(6) {
   background-image: url("../images/seas/schastlivcevo.jpg");
 }
-/* line 602, ../scss/style.scss */
+/* line 608, ../scss/style.scss */
 .ways .directions .directions__card:nth-of-type(7) {
   background-image: url("../images/seas/genichesk.jpg");
 }
 @media (max-width: 992px) {
-  /* line 570, ../scss/style.scss */
+  /* line 576, ../scss/style.scss */
   .ways .directions .directions__card {
     flex: 0 1 85%;
     height: 50vh;
   }
 }
 @media (max-width: 576px) {
-  /* line 570, ../scss/style.scss */
+  /* line 576, ../scss/style.scss */
   .ways .directions .directions__card {
     flex: 0 1 85%;
     height: 40vh;
   }
 }
-/* line 625, ../scss/style.scss */
+/* line 631, ../scss/style.scss */
 .ways .directions .directions__card .directions__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-/* line 631, ../scss/style.scss */
+/* line 637, ../scss/style.scss */
 .ways .directions .directions__card .directions__content .directions__icon {
   color: #fff;
   font-size: 2em;
   z-index: 2;
 }
-/* line 637, ../scss/style.scss */
+/* line 643, ../scss/style.scss */
 .ways .directions .directions__card .directions__content .directions__title {
   font-size: 1.8em;
   font-weight: 500;
@@ -638,7 +641,7 @@ section:not(:first-child) {
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
   z-index: 2;
 }
-/* line 645, ../scss/style.scss */
+/* line 651, ../scss/style.scss */
 .ways .directions .directions__card .directions__content .directions__link {
   color: #fff;
   font-size: 1em;
@@ -647,12 +650,12 @@ section:not(:first-child) {
   z-index: 2;
   transition: ease 0.3s all;
 }
-/* line 653, ../scss/style.scss */
+/* line 659, ../scss/style.scss */
 .ways .directions .directions__card .directions__content .directions__link:hover {
   text-decoration: none;
   transform: scale(1.1);
 }
-/* line 660, ../scss/style.scss */
+/* line 666, ../scss/style.scss */
 .ways .directions .directions__card .directions__price {
   font-size: 2em;
   position: absolute;
@@ -662,12 +665,12 @@ section:not(:first-child) {
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
   z-index: 2;
 }
-/* line 670, ../scss/style.scss */
+/* line 676, ../scss/style.scss */
 .ways .directions .directions__card:hover .directions__overlay {
   opacity: 1;
 }
 
-/* line 681, ../scss/style.scss */
+/* line 687, ../scss/style.scss */
 .sec5 {
   padding-right: 15px;
   padding-left: 15px;
@@ -678,30 +681,30 @@ section:not(:first-child) {
   margin-left: auto;
 }
 
-/* line 691, ../scss/style.scss */
+/* line 697, ../scss/style.scss */
 .why-us {
   font-family: "Lobster", cursive;
   text-align: center;
   font-size: 50px;
 }
-/* line 696, ../scss/style.scss */
+/* line 702, ../scss/style.scss */
 .why-us h2 {
   color: #db2c1d;
 }
 
-/* line 701, ../scss/style.scss */
+/* line 707, ../scss/style.scss */
 .inside {
   font-family: "Oswald", cursive;
   text-align: center;
   font-size: 25px;
 }
 
-/* line 707, ../scss/style.scss */
+/* line 713, ../scss/style.scss */
 .why-us__paragraph {
   margin-top: 10px;
   line-height: 1.5;
 }
-/* line 711, ../scss/style.scss */
+/* line 717, ../scss/style.scss */
 .why-us__paragraph:before {
   content: "";
   background-image: url("https://i.ibb.co/C2gVk9Z/3-55.png");
@@ -715,7 +718,7 @@ section:not(:first-child) {
   margin-top: 10px;
 }
 
-/* line 725, ../scss/style.scss */
+/* line 731, ../scss/style.scss */
 .end-text {
   margin-top: 40px;
   font-size: 20px;
@@ -725,16 +728,16 @@ section:not(:first-child) {
   line-height: 1.5;
 }
 
-/* line 735, ../scss/style.scss */
+/* line 741, ../scss/style.scss */
 .why-us__logo {
   margin-top: 50px;
 }
-/* line 738, ../scss/style.scss */
+/* line 744, ../scss/style.scss */
 .why-us__logo img {
   max-width: 280px;
 }
 
-/* line 743, ../scss/style.scss */
+/* line 749, ../scss/style.scss */
 .why-us__tel {
   font-family: "Oswald", cursive;
   text-align: center;
@@ -742,25 +745,25 @@ section:not(:first-child) {
   margin-top: 40px;
   font-size: 50px;
 }
-/* line 750, ../scss/style.scss */
+/* line 756, ../scss/style.scss */
 .why-us__tel a {
   color: #d22020;
   text-decoration: none;
 }
 @media (max-width: 992px) {
-  /* line 743, ../scss/style.scss */
+  /* line 749, ../scss/style.scss */
   .why-us__tel {
     font-size: 3em;
   }
 }
 @media (max-width: 576px) {
-  /* line 743, ../scss/style.scss */
+  /* line 749, ../scss/style.scss */
   .why-us__tel {
     font-size: 1.8em;
   }
 }
 
-/* line 764, ../scss/style.scss */
+/* line 770, ../scss/style.scss */
 .we__soc {
   font-family: "Oswald";
   text-align: center;
@@ -769,7 +772,7 @@ section:not(:first-child) {
   color: #000000;
 }
 
-/* line 772, ../scss/style.scss */
+/* line 778, ../scss/style.scss */
 .sec5__soc {
   display: flex;
   flex-wrap: wrap;
@@ -781,20 +784,20 @@ section:not(:first-child) {
   margin-left: auto;
   max-width: 768px;
 }
-/* line 783, ../scss/style.scss */
+/* line 789, ../scss/style.scss */
 .sec5__soc .social-link {
   flex: 1 1 50%;
   padding: 15px;
 }
 @media screen and (max-width: 768px) {
-  /* line 783, ../scss/style.scss */
+  /* line 789, ../scss/style.scss */
   .sec5__soc .social-link {
     flex: 1 1 100%;
     padding-top: 0;
     padding-bottom: 0;
   }
 }
-/* line 793, ../scss/style.scss */
+/* line 799, ../scss/style.scss */
 .sec5__soc .social-link ul {
   font-family: "Roboto", sans-serif;
   display: flex;
@@ -803,19 +806,19 @@ section:not(:first-child) {
   width: -moz-max-content;
   width: max-content;
 }
-/* line 801, ../scss/style.scss */
+/* line 807, ../scss/style.scss */
 .sec5__soc .social-link ul:first-child {
   margin-left: auto;
 }
-/* line 805, ../scss/style.scss */
+/* line 811, ../scss/style.scss */
 .sec5__soc .social-link ul:nth-child(1) {
   margin-right: auto;
 }
-/* line 810, ../scss/style.scss */
+/* line 816, ../scss/style.scss */
 .sec5__soc .social-link ul li img {
   margin-right: 5px;
 }
-/* line 814, ../scss/style.scss */
+/* line 820, ../scss/style.scss */
 .sec5__soc .social-link ul li a {
   text-decoration: none;
   color: #000;
@@ -823,7 +826,7 @@ section:not(:first-child) {
   top: -7px;
 }
 
-/* line 825, ../scss/style.scss */
+/* line 831, ../scss/style.scss */
 .title-footer {
   font-family: "Oswald";
   text-align: center;
@@ -834,7 +837,7 @@ section:not(:first-child) {
   padding: 15px;
 }
 
-/* line 835, ../scss/style.scss */
+/* line 841, ../scss/style.scss */
 .title-footer__two {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -842,13 +845,13 @@ section:not(:first-child) {
   padding: 0px 10px 15px 0px;
 }
 
-/* line 842, ../scss/style.scss */
+/* line 848, ../scss/style.scss */
 .footer-link {
   color: #fff;
   font-weight: lighter;
 }
 
-/* line 848, ../scss/style.scss */
+/* line 854, ../scss/style.scss */
 .footer {
   background-color: #727b8d;
 }
