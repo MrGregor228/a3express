@@ -20,6 +20,13 @@ menuToggler.addEventListener('click', () => {
 	menuHeight();
 });
 
+const body = document.getElementsByTagName('body')[0];
+
+body.addEventListener('touchend', () => {
+	menu.classList.remove('opened');
+	menuHeight();
+});
+
 // menuCloser.addEventListener('click', () => {
 // 	menu.classList.add('closed');
 // 	setTimeout(() => {
