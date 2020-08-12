@@ -14,7 +14,7 @@ const menuHeight = () => {
 menuToggler.addEventListener('click', () => {
 	// menu.classList.add('opened');
 	// menu.classList.remove('closed');
-	
+
 
 	menu.classList.toggle('opened');
 	menuHeight();
@@ -64,17 +64,14 @@ window.addEventListener('resize', () => {
 	}
 });
 
-window.addEventListener('DOMContentLoaded', () =>{
-	const rightSliderButton = document.querySelector('.falseNavigationRight'),
-		  leftSliderButton = document.querySelector('.falseNavigationLeft'),
-		  owlStageOuter = document.querySelector('.owl-stage-outer');
+window.addEventListener('DOMContentLoaded', () => {
+	window.addEventListener('resize', () => {
+		const rightSliderButton = document.querySelector('.falseNavigationRight'),
+			  owlStageOuter = document.querySelector('.owl-stage-outer'),
+			  controls = document.querySelector('.controls');
 
-	rightSliderButton.style.top = `${(owlStageOuter.clientHeight / 2) - (rightSliderButton.clientHeight / 2)}px`;
-	leftSliderButton.style.top = `${(owlStageOuter.clientHeight / 2) - (leftSliderButton.clientHeight / 2)}px`;
-
-	rightSliderButton.style.right = `${owlStageOuter.clientWidth - owlStageOuter.clientWidth}px`;
-	leftSliderButton.style.left = `${owlStageOuter.clientWidth - owlStageOuter.clientWidth}px`;
-
+		controls.style.top = `${(owlStageOuter.clientHeight / 2.25) - (rightSliderButton.clientHeight / 2.25)}px`;
+	});
 });
 
 AOS.init();
