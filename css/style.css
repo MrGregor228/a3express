@@ -276,10 +276,10 @@ section:not(:first-child) {
 /* line 274, ../scss/style.scss */
 .slider-1 .controls {
   display: flex;
-  justify-content: space-between;
   position: absolute;
   overflow: visible;
   visibility: visible;
+  max-width: 768px;
   width: 100%;
   height: auto;
 }
@@ -299,10 +299,12 @@ section:not(:first-child) {
 /* line 302, ../scss/style.scss */
 .slider-1 .falseNavigationLeft {
   border-radius: 0 5px 5px 0;
+  margin-right: auto;
 }
 /* line 307, ../scss/style.scss */
 .slider-1 .falseNavigationRight {
   border-radius: 5px 0 0 5px;
+  margin-left: auto;
 }
 
 /* line 358, ../scss/style.scss */

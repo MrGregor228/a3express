@@ -273,12 +273,12 @@ section {
 
     .controls {
         display: flex;
-        justify-content: space-between;
         position: absolute;  
         
         overflow: visible;
         
-        visibility: visible;      
+        visibility: visible;    
+        max-width: 768px;  
         width: 100%;
         height: auto;
 
@@ -301,13 +301,13 @@ section {
 
     .falseNavigationLeft {
         border-radius: 0 5px 5px 0;
-        // margin-left: auto;
+        margin-right: auto;
     }
 
     .falseNavigationRight {
         border-radius: 5px 0 0 5px;
-
-        // margin-right: auto;
+margin-left: auto;
+        
     }
 }
 
