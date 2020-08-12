@@ -273,14 +273,12 @@ section {
 
     .controls {
         display: flex;
-        position: absolute;  
-        
+        position: absolute;
+        justify-content: space-between;
         overflow: visible;
-        
-        visibility: visible;    
-        max-width: 768px;  
         width: 100%;
-        height: auto;
+
+        height: 0px;
 
         button {
             background: none;
@@ -301,13 +299,10 @@ section {
 
     .falseNavigationLeft {
         border-radius: 0 5px 5px 0;
-        margin-right: auto;
     }
 
     .falseNavigationRight {
-        border-radius: 5px 0 0 5px;
-margin-left: auto;
-        
+        border-radius: 5px 0 0 5px;        
     }
 }
 
