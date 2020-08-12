@@ -609,6 +609,10 @@ margin-left: auto;
                 background-image: url("../images/seas/genichesk.jpg");
             }
 
+            &:nth-of-type(8) {
+                background-image: url("../images/seas/zatoka.jpg");
+            }
+
             background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
