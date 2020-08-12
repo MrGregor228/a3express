@@ -281,7 +281,7 @@ section:not(:first-child) {
   overflow: visible;
   visibility: visible;
   width: 100%;
-  height: 0px;
+  height: auto;
 }
 /* line 285, ../scss/style.scss */
 .slider-1 .controls button {
