@@ -474,14 +474,14 @@ section:not(:first-child) {
   /* line 477, ../scss/style.scss */
   .header__phone {
     font-size: 3em;
-    margin-top: 0;
+    margin-top: 30px;
   }
 }
 @media (max-width: 576px) {
   /* line 477, ../scss/style.scss */
   .header__phone {
     font-size: 1.8em;
-    margin-top: 0;
+    margin-top: 30px;
   }
 }
 
