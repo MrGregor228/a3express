@@ -398,6 +398,8 @@ section {
 
     .header__title_left {
         text-align: left;
+        -webkit-text-stroke:2px white;
+        letter-spacing: 3px;
     }
 
     .header__title_right {
@@ -435,7 +437,7 @@ section {
         font-weight: 500;
         font-size: 3em;
         line-height: 1.25;
-        margin: 0 2rem;
+        margin: 0 2rem;        
 
         @media (max-width: 992px) {
             font-size: 2em;
