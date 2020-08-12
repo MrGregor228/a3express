@@ -285,9 +285,9 @@ section {
             border: none;
             color: white;
             font-size: 5em;
-            
-            visibility: visible; 
-            
+
+            visibility: visible;
+
             cursor: pointer;
 
             &:hover,
@@ -302,7 +302,7 @@ section {
     }
 
     .falseNavigationRight {
-        border-radius: 5px 0 0 5px;        
+        border-radius: 5px 0 0 5px;
     }
 }
 
@@ -398,7 +398,7 @@ section {
 
     .header__title_left {
         text-align: left;
-        -webkit-text-stroke:2px white;
+        -webkit-text-stroke: 2px white;
         letter-spacing: 3px;
     }
 
@@ -408,8 +408,9 @@ section {
     }
 
     .header__subtitle {
-        font-size: 3.5em;
+        font-size: 3.2em;
         margin-bottom: 3rem;
+        font-weight: 600;
 
         @media (max-width: 992px) {
             font-size: 2.5em;
@@ -437,7 +438,7 @@ section {
         font-weight: 500;
         font-size: 3em;
         line-height: 1.25;
-        margin: 0 2rem;        
+        margin: 0 2rem;
 
         @media (max-width: 992px) {
             font-size: 2em;
