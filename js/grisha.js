@@ -54,7 +54,7 @@ navigationMenuLink.forEach(item => {
 $("li.navigation-menu__link a").click(function (e) {
 	e.preventDefault();
 	elementClick = $(this).attr("href");
-	destination = $(elementClick).offset().top - 150;
+	destination = $(elementClick).offset().top - 100;
 
 	window.scrollTo({
 		top: destination,
