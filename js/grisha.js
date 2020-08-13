@@ -54,7 +54,7 @@ navigationMenuLink.forEach(item => {
 $("li.navigation-menu__link a").click(function (e) {
 	e.preventDefault();
 	elementClick = $(this).attr("href");
-	destination = $(elementClick).offset().top - 250 + 'px';
+	destination = $(elementClick).offset().top + 100 + 'px';
 	$("body,html").animate({
 		scrollTop: destination
 	}, 350);
@@ -62,7 +62,7 @@ $("li.navigation-menu__link a").click(function (e) {
 $(".navigation__brand a").click(function (e) {
 	e.preventDefault();
 	elementClick = $(this).attr("href");
-	destination = $(elementClick).offset().top - 250 + 'px';
+	destination = $(elementClick).offset().top - 100 + 'px';
 	$("body,html").animate({
 		scrollTop: destination
 	}, 350);
