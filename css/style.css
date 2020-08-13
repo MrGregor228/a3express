@@ -589,27 +589,27 @@ button:focus {
 }
 /* line 584, ../scss/style.scss */
 .ways .directions .directions__card:nth-of-type(2) {
-  background-image: url("../images/seas/berdyansk.jpg");
+  background-image: url("../images/seas/lazurnoe.jpg");
 }
 /* line 588, ../scss/style.scss */
 .ways .directions .directions__card:nth-of-type(3) {
-  background-image: url("../images/seas/lazurnoe.jpg");
+  background-image: url("../images/seas/skadovsk.jpg");
 }
 /* line 592, ../scss/style.scss */
 .ways .directions .directions__card:nth-of-type(4) {
-  background-image: url("../images/seas/kirilovka.jpg");
+  background-image: url("../images/seas/berdyansk.jpg");
 }
 /* line 596, ../scss/style.scss */
 .ways .directions .directions__card:nth-of-type(5) {
-  background-image: url("../images/seas/skadovsk.jpg");
+  background-image: url("../images/seas/schastlivcevo.jpg");
 }
 /* line 600, ../scss/style.scss */
 .ways .directions .directions__card:nth-of-type(6) {
-  background-image: url("../images/seas/schastlivcevo.jpg");
+  background-image: url("../images/seas/genichesk.jpg");
 }
 /* line 604, ../scss/style.scss */
 .ways .directions .directions__card:nth-of-type(7) {
-  background-image: url("../images/seas/genichesk.jpg");
+  background-image: url("../images/seas/kirilovka.jpg");
 }
 /* line 608, ../scss/style.scss */
 .ways .directions .directions__card:nth-of-type(8) {
