@@ -73,15 +73,41 @@ navigationMenuLink.forEach((item,i) => {
 // 		scrollTop: destination
 // 	}, 350);
 // });
-// $(".navigation__brand a").click(function (e) {
-// 	e.preventDefault();
-// 	elementClick = $(this).attr("href");
-// 	destination = $(elementClick).offset().top - 100;
+$(".navigation__brand a").click(function (e) {
+	e.preventDefault();
+	elementClick = $(this).attr("href");
+	destination = $(elementClick).offset().top - 100;
 
-// 	$("body,html").animate({
-// 		scrollTop: destination
-// 	}, 350);
-// });
+	$("body,html").animate({
+		scrollTop: destination
+	}, 350);
+});
+
+// Select all links with hashes
+$('li.navigation-menu__link a')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top - 75
+        }, 500);
+      }
+    }
+  });
 
 window.addEventListener('resize', () => {
 	if (document.body.clientWidth < 992) {
