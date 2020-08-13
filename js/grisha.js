@@ -11,6 +11,18 @@ const menuHeight = () => {
 	}
 };
 
+let arr = [
+	document.getElementById('advantages'),
+	document.getElementById('directions'),
+	document.getElementById('slider'),
+	document.getElementById('whyUs'),
+	document.getElementById('privacy-policy')
+];
+
+
+
+
+
 menuToggler.addEventListener('click', () => {
 	// menu.classList.add('opened');
 	// menu.classList.remove('closed');
@@ -34,47 +46,42 @@ body.addEventListener('touchend', () => {
 // 	}, 500);
 // });
 
-navigationMenuLink.forEach(item => {
-	item.addEventListener('click', () => {
+navigationMenuLink.forEach((item,i) => {
+	item.addEventListener('click', (e) => {
+		e.preventDefault();
 		// menu.classList.add('closed');
 		// setTimeout(() => {
 		// 	menu.classList.remove('opened');
 		// }, 500);
+		arr[i].scrollIntoView({behavior: "smooth"});
 		if (menu.classList.contains('opened')) {
 			menu.classList.remove('opened');
 			menuHeight();
 		} else {
 			return false;
 		}
-		
 	});
 });
 
 // smooth transfer
-$("li.navigation-menu__link a").click(function (e) {
-	e.preventDefault();
-	elementClick = $(this).attr("href");
-	destination = $(elementClick).offset().top - 100;
+// $("li.navigation-menu__link a").click(function (e) {
+// 	e.preventDefault();
+// 	elementClick = $(this).attr("href");
+// 	destination = $(elementClick).offset().top - 100;
 
-	window.scrollTo({
-		top: destination,
-		behavior: "smooth"
-	});
-	// $("body,html").animate({
-	// 	scrollTop: destination
-	// }, 350);
-});
-$(".navigation__brand a").click(function (e) {
-	e.preventDefault();
-	elementClick = $(this).attr("href");
-	destination = $(elementClick).offset().top - 100;
+// 	$("body,html").animate({
+// 		scrollTop: destination
+// 	}, 350);
+// });
+// $(".navigation__brand a").click(function (e) {
+// 	e.preventDefault();
+// 	elementClick = $(this).attr("href");
+// 	destination = $(elementClick).offset().top - 100;
 
-	window.scrollTo({
-		top: destination,
-		behavior: "smooth"
-	});
-});
-
+// 	$("body,html").animate({
+// 		scrollTop: destination
+// 	}, 350);
+// });
 
 window.addEventListener('resize', () => {
 	if (document.body.clientWidth < 992) {
