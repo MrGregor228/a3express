@@ -55,18 +55,23 @@ $("li.navigation-menu__link a").click(function (e) {
 	e.preventDefault();
 	elementClick = $(this).attr("href");
 	destination = $(elementClick).offset().top - 150;
-	$("body,html").animate({
-		scrollTop: destination
-	}, 350);
+
+	window.scrollTo({
+		top: destination,
+		behavior: "smooth"
+	});
+	// $("body,html").animate({
+	// 	scrollTop: destination
+	// }, 350);
 });
-$(".navigation__brand a").click(function (e) {
-	e.preventDefault();
-	elementClick = $(this).attr("href");
-	destination = $(elementClick).offset().top - 150;
-	$("body,html").animate({
-		scrollTop: destination
-	}, 350);
-});
+// $(".navigation__brand a").click(function (e) {
+// 	e.preventDefault();
+// 	elementClick = $(this).attr("href");
+// 	destination = $(elementClick).offset().top - 150;
+// 	$("body,html").animate({
+// 		scrollTop: destination
+// 	}, 350);
+// });
 
 
 window.addEventListener('resize', () => {
