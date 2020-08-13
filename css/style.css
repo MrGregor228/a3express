@@ -865,5 +865,6 @@ button:focus {
 
 /* line 857, ../scss/style.scss */
 .footer {
+  margin-top: 30px;
   background-color: #727b8d;
 }
