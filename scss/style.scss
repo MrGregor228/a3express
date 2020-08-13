@@ -512,6 +512,9 @@ button {
   text-align: center;
   flex-direction: row;
   justify-content: space-around;
+  max-width: 1110px;
+  margin-right: auto;
+  margin-left: auto;
 
   @media (max-width: 768px) {
     flex-wrap: wrap;
