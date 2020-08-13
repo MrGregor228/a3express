@@ -400,21 +400,6 @@ button:focus {
     font-size: 2.5em;
   }
 }
-/* line 439, ../scss/style.scss */
-.header .header__subtitle:before {
-  content: "";
-  height: 3px;
-  width: 90%;
-  background: #000;
-  display: block;
-  margin: 0 auto 20px auto;
-}
-@media (max-width: 768px) {
-  /* line 439, ../scss/style.scss */
-  .header .header__subtitle:before {
-    height: 2px;
-  }
-}
 /* line 453, ../scss/style.scss */
 .header .header__text {
   font-weight: 500;
