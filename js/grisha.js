@@ -53,7 +53,7 @@ navigationMenuLink.forEach((item,i) => {
 		// setTimeout(() => {
 		// 	menu.classList.remove('opened');
 		// }, 500);
-		arr[i].scrollIntoView({behavior: "smooth"});
+		// arr[i].scrollIntoView({behavior: "smooth"});
 		if (menu.classList.contains('opened')) {
 			menu.classList.remove('opened');
 			menuHeight();
