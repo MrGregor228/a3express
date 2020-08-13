@@ -64,14 +64,16 @@ $("li.navigation-menu__link a").click(function (e) {
 	// 	scrollTop: destination
 	// }, 350);
 });
-// $(".navigation__brand a").click(function (e) {
-// 	e.preventDefault();
-// 	elementClick = $(this).attr("href");
-// 	destination = $(elementClick).offset().top - 150;
-// 	$("body,html").animate({
-// 		scrollTop: destination
-// 	}, 350);
-// });
+$(".navigation__brand a").click(function (e) {
+	e.preventDefault();
+	elementClick = $(this).attr("href");
+	destination = $(elementClick).offset().top - 100;
+
+	window.scrollTo({
+		top: destination,
+		behavior: "smooth"
+	});
+});
 
 
 window.addEventListener('resize', () => {
