@@ -73,8 +73,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 14, ../scss/style.scss */
 html, body {
   font-family: "Oswald", sans-serif;
-  scroll-behavior: smooth;
-  -webkit-scroll-behavior: smooth;
 }
 
 /* line 20, ../scss/style.scss */
