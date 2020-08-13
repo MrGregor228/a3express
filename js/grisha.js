@@ -69,9 +69,11 @@ navigationMenuLink.forEach(item => {
 // });
 
 
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("li.navigation-menu__link a").on('click', function(event) {
+// $(document).ready(function(){
+//   // Add smooth scrolling to all links
+  
+// });
+$("li.navigation-menu__link a").on('click', function(event) {
     if (this.hash !== "") {
       event.preventDefault();
       var hash = this.hash;
@@ -90,8 +92,6 @@ $(document).ready(function(){
       }, 800);
     }
   });
-});
-
 
 window.addEventListener('resize', () => {
 	if (document.body.clientWidth < 992) {
