@@ -51,22 +51,22 @@ navigationMenuLink.forEach(item => {
 });
 
 // smooth transfer
-$("li.navigation-menu__link a").click(function (e) {
-	e.preventDefault();
-	elementClick = $(this).attr("href");
-	destination = $(elementClick).offset().top + 100 + 'px';
-	$("body,html").animate({
-		scrollTop: destination
-	}, 350);
-});
-$(".navigation__brand a").click(function (e) {
-	e.preventDefault();
-	elementClick = $(this).attr("href");
-	destination = $(elementClick).offset().top - 100 + 'px';
-	$("body,html").animate({
-		scrollTop: destination
-	}, 350);
-});
+// $("li.navigation-menu__link a").click(function (e) {
+// 	e.preventDefault();
+// 	elementClick = $(this).attr("href");
+// 	destination = $(elementClick).offset().top - 150;
+// 	$("body,html").animate({
+// 		scrollTop: destination
+// 	}, 350);
+// });
+// $(".navigation__brand a").click(function (e) {
+// 	e.preventDefault();
+// 	elementClick = $(this).attr("href");
+// 	destination = $(elementClick).offset().top - 150;
+// 	$("body,html").animate({
+// 		scrollTop: destination
+// 	}, 350);
+// });
 
 window.addEventListener('resize', () => {
 	if (document.body.clientWidth < 992) {

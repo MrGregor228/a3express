@@ -11,8 +11,10 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   font-family: "Oswald", sans-serif;
+  scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
 }
 
 button {
