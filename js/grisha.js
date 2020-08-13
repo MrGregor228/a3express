@@ -40,8 +40,13 @@ navigationMenuLink.forEach(item => {
 		// setTimeout(() => {
 		// 	menu.classList.remove('opened');
 		// }, 500);
-		menu.classList.remove('opened');
-		menuHeight();
+		if (menu.classList.contains('opened')) {
+			menu.classList.remove('opened');
+			menuHeight();
+		} else {
+			return false;
+		}
+		
 	});
 });
 
@@ -49,7 +54,7 @@ navigationMenuLink.forEach(item => {
 $("li.navigation-menu__link a").click(function (e) {
 	e.preventDefault();
 	elementClick = $(this).attr("href");
-	destination = $(elementClick).offset().top - 250;
+	destination = $(elementClick).offset().top - 100;
 	$("body,html").animate({
 		scrollTop: destination
 	}, 350);
