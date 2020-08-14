@@ -21,8 +21,9 @@ menuToggler.addEventListener('click', () => {
 	menuHeight();
 });
 
-section.forEach(item => {
-	item.addEventListener('click', () => {				
+section.forEach((item, e) => {
+	item.addEventListener('click', () => {		
+		let target = e.target;		
 		if (document.body.clientWidth <= 992) {
 			menu.classList.remove('opened');
 			menuHeight();
