@@ -26,9 +26,11 @@ let arr = [
 menuToggler.addEventListener('click', () => {
 	// menu.classList.add('opened');
 	// menu.classList.remove('closed');
-
-
-	menu.classList.toggle('opened');
+	if (menu.classList.contains('opened')) {
+		menu.classList.remove('opened');
+	} else {
+		menu.classList.add('opened');
+	}	
 	menuHeight();
 });
 
