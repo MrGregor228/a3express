@@ -10,52 +10,31 @@ const menuHeight = () => {
 		menu.style.height = 0;
 	}
 };
+const section = document.querySelectorAll('section');
 
-let arr = [
-	document.getElementById('advantages'),
-	document.getElementById('directions'),
-	document.getElementById('slider'),
-	document.getElementById('whyUs'),
-	document.getElementById('privacy-policy')
-];
-
-
-
-
-
-menuToggler.addEventListener('click', () => {
-	// menu.classList.add('opened');
-	// menu.classList.remove('closed');
+menuToggler.addEventListener('click', () => {	
 	if (menu.classList.contains('opened')) {
 		menu.classList.remove('opened');
 	} else {
 		menu.classList.add('opened');
-	}	
+	}
 	menuHeight();
 });
 
-const body = document.getElementsByTagName('body')[0];
-
-body.addEventListener('touchend', () => {
-	menu.classList.remove('opened');
-	menuHeight();
+section.forEach(item => {
+	item.addEventListener('click', () => {				
+		if (document.body.clientWidth <= 992) {
+			menu.classList.remove('opened');
+			menuHeight();
+		} else {
+			menu.style.height = 'auto';
+		}		
+	});
 });
 
-// menuCloser.addEventListener('click', () => {
-// 	menu.classList.add('closed');
-// 	setTimeout(() => {
-// 		menu.classList.remove('opened');
-// 	}, 500);
-// });
-
-navigationMenuLink.forEach((item,i) => {
+navigationMenuLink.forEach((item, i) => {
 	item.addEventListener('click', (e) => {
 		e.preventDefault();
-		// menu.classList.add('closed');
-		// setTimeout(() => {
-		// 	menu.classList.remove('opened');
-		// }, 500);
-		// arr[i].scrollIntoView({behavior: "smooth"});
 		if (menu.classList.contains('opened')) {
 			menu.classList.remove('opened');
 			menuHeight();
@@ -65,16 +44,6 @@ navigationMenuLink.forEach((item,i) => {
 	});
 });
 
-// smooth transfer
-// $("li.navigation-menu__link a").click(function (e) {
-// 	e.preventDefault();
-// 	elementClick = $(this).attr("href");
-// 	destination = $(elementClick).offset().top - 100;
-
-// 	$("body,html").animate({
-// 		scrollTop: destination
-// 	}, 350);
-// });
 $(".navigation__brand a").click(function (e) {
 	e.preventDefault();
 	elementClick = $(this).attr("href");
@@ -85,31 +54,24 @@ $(".navigation__brand a").click(function (e) {
 	}, 350);
 });
 
-// Select all links with hashes
 $('li.navigation-menu__link a')
-  // Remove links that don't actually link to anything
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
-    // On-page links
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
-      location.hostname == this.hostname
-    ) {
-      // Figure out element to scroll to
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
-      if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top - 75
-        }, 500);
-      }
-    }
-  });
+	.not('[href="#"]')
+	.not('[href="#0"]')
+	.click(function (event) {
+		if (
+			location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+			location.hostname == this.hostname
+		) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+			if (target.length) {
+				event.preventDefault();
+				$('html, body').animate({
+					scrollTop: target.offset().top - 75
+				}, 500);
+			}
+		}
+	});
 
 window.addEventListener('resize', () => {
 	if (document.body.clientWidth < 992) {

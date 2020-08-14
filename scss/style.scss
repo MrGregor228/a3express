@@ -13,8 +13,6 @@
 
 html, body {
   font-family: "Oswald", sans-serif;
-  // scroll-behavior: smooth;
-  // -webkit-scroll-behavior: smooth;
 }
 
 button {
@@ -91,9 +89,6 @@ button {
       .navigation-menu__link {
         font-size: 20px;
         padding: 3px 8px;
-        // max-width: -webkit-max-content;
-        // max-width: -moz-max-content;
-        // max-width: max-content;
 
         &:after {
           content: "";
@@ -122,46 +117,6 @@ button {
         display: none;
       }
 
-      // @media screen and (max-width: 992px) {
-      //     display: none;
-      //     background-color: #fff;
-      //     overflow: hidden;
-      //     position: fixed;
-      //     top: 0%;
-      //     left: 0;
-      //     height: 100vh;
-      //     width: 100%;
-
-      //     .navigation-menu__link {
-      //         margin-top: 10px;
-      //     }
-
-      //     .menuCloser {
-      //         display: block;
-      //         margin-top: 25px;
-
-      //         .close {
-      //             background: none;
-      //             border: none;
-      //             font-size: 25px;
-      //             color: #4d4d4d;
-      //         }
-      //     }
-
-      //     &.opened {
-      //         display: flex;
-      //         flex-direction: column;
-      //         align-items: center;
-      //         justify-content: center;
-      //         -webkit-animation: menuOpen 0.5s linear alternate both;
-      //         animation: menuOpen 0.5s linear alternate both;
-      //     }
-
-      //     &.closed {
-      //         -webkit-animation: menuClose 0.5s linear alternate both;
-      //         animation: menuClose 0.5s linear alternate both;
-      //     }
-      // }
       @media screen and (max-width: 992px) {
         display: flex;
         flex-direction: column;
@@ -170,16 +125,6 @@ button {
         overflow: hidden;
         width: 100%;
 
-        // &.opened {
-
-        //     -webkit-animation: menuOpen 0.5s linear alternate both;
-        //     animation: menuOpen 0.5s linear alternate both;
-        // }
-
-        // &.closed {
-        //     -webkit-animation: menuClose 0.5s linear alternate both;
-        //     animation: menuClose 0.5s linear alternate both;
-        // }
         &.navigation-menu {
           margin-right: -15px;
           margin-left: -15px;
@@ -306,46 +251,6 @@ button {
     border-radius: 5px 0 0 5px;
   }
 }
-
-// @keyframes menuOpen {
-//     0% {
-//         top: -100%;
-//     }
-
-//     100% {
-//         top: 0%;
-//     }
-// }
-
-// @-webkit-keyframes menuOpen {
-//     0% {
-//         top: -100%;
-//     }
-
-//     100% {
-//         top: 0%;
-//     }
-// }
-
-// @keyframes menuClose {
-//     0% {
-//         top: 0%;
-//     }
-
-//     100% {
-//         top: -100%;
-//     }
-// }
-
-// @-webkit-keyframes menuClose {
-//     0% {
-//         top: 0%;
-//     }
-
-//     100% {
-//         top: -100%;
-//     }
-// }
 
 // -------------------- Gregory ------------------
 
